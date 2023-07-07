@@ -6,7 +6,7 @@ An architecture design of a payment processing application . That will be hosted
 2.	Gateway validates request that was received from the merchant 
 3.	Gateway applies additional tests to prevent fraud attempts, that are provided by external references and sends request to bank.
 4.	After receiving response from the bank, gateway system returns response to the client. 
-5.  While logging in 
+5.  While logging in the application should use GeoIP location , to display geographical based prompts.
 
 
 ### Transaction processing requirements
