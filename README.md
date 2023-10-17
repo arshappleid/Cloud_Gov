@@ -17,4 +17,4 @@ An architecture design of a payment processing application . That will be hosted
 
 
 ## Latest Architecture Design 
-https://www.figma.com/file/dvujQEeSVfrhawk4Ge2yyJ/Untitled?node-id=0%3A1&mode=devgit
+![Design System Architecture](./images/architecture.png)
