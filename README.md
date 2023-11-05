@@ -3,12 +3,12 @@ A cloud solution for a subset of government organization , that has multiple wor
 
 The solution has been optimized for Operational Excellence , Securiry , Reliability , Performance , Cost Optimization. While also taking into Governance practices into account.
 
-## Important Links :
-- [Original Procurement Document Request] (./docs/procurement_request.docx)
-- [Functional & Non Functional Requirements] (./docs/requirements.docx)
-- [Architecture Documentation] (./docs/architecture.docx)
-- [Infrastructure as Code] (./Infrastructure_as_Code)
-- [Testing Procedure] (./docs/testing_procerdures.docx)
+## Important Links:
+- [Original Procurement Document Request](./docs/procurement_request.docx)
+- [Functional & Non Functional Requirements](./docs/requirements.docx)
+- [Architecture Documentation](./docs/architecture.docx)
+- [Infrastructure as Code](./Infrastructure_as_Code)
+- [Testing Procedure](./docs/testing_procedures.docx)
 
 ## Latest Architecture Design 
 ![Design System Architecture](./images/architecture.png)
