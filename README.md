@@ -1,20 +1,14 @@
 ## Description
-An architecture design of a payment processing application . That will be hosted on a cloud Infrastructure of choice between AWS or Azure . 
+A cloud solution for a subset of government organization , that has multiple workflow apps deployed to manage day to day management tasks and relay valuable information to people. This cloud Solution can act as a template to manage their overall cloud infrastructure , and expand their network to allow for additional apps in the future. By providing seamless , and easy integration to their current secure infrastructure.
 
-### Basic Flow of the App
-1.	Online merchant shop sends request to gateway with credit card, client and purchase data. 
-2.	Gateway validates request that was received from the merchant 
-3.	Gateway applies additional tests to prevent fraud attempts, that are provided by external references and sends request to bank.
-4.	After receiving response from the bank, gateway system returns response to the client. 
-5.  While logging in the application should use GeoIP location , to display geographical based prompts.
+The solution has been optimized for Operational Excellence , Securiry , Reliability , Performance , Cost Optimization. While also taking into Governance practices into account.
 
-
-### Transaction processing requirements
-1.	Purchasing of the items from online shop, 
-2.	Cancelation of purchase (this operation is executed in case that end user decided to cancel purchase prior to shipping) 
-3.	Risk validation of end user (validation of credibility of end user in order to prevent fraud attempts)
-
-
+## Important Links :
+- [Original Procurement Document Request] (./docs/procurement_request.docx)
+- [Functional & Non Functional Requirements] (./docs/requirements.docx)
+- [Architecture Documentation] (./docs/architecture.docx)
+- [Infrastructure as Code] (./Infrastructure_as_Code)
+- [Testing Procedure] (./docs/testing_procerdures.docx)
 
 ## Latest Architecture Design 
 ![Design System Architecture](./images/architecture.png)
