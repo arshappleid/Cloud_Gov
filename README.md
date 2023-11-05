@@ -3,6 +3,14 @@ A cloud solution for a subset of government organization , that has multiple wor
 
 The solution has been optimized for Operational Excellence , Securiry , Reliability , Performance , Cost Optimization. While also taking into Governance practices into account.
 
+## Requirements Overview:
+
+- Multi AZ Availability for high Availability.
+- Multi VPC Structure to design a cohesive Infrastructure , for future projects to be able to scale.
+- Scaling capacity , to endure high number of User Requests.
+- Auto recovery from failure . 
+- Appropriate Logging at individual VPC level.
+
 ## Important Links:
 - [Original Procurement Document Request](./docs/procurement_request.pdf)
 - [Functional & Non Functional Requirements](./docs/requirements.docx)
