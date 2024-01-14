@@ -1,7 +1,7 @@
 ## Description
 A cloud solution for a subset of government organization , that has multiple workflow apps deployed to manage day to day management tasks and relay valuable information to people. This cloud Solution can act as a template to manage their overall cloud infrastructure , and expand their network to allow for additional apps in the future. By providing seamless , and easy integration to their current secure infrastructure.
 
-The solution has been optimized for Operational Excellence , Securiry , Reliability , Performance , Cost Optimization. While also taking into Governance practices into account.
+The solution has been optimized for Operational Excellence , Security , Reliability , Performance , Cost Optimization. While also taking into Governance practices into account.
 
 ## Requirements Overview:
 
