@@ -20,3 +20,6 @@ The solution has been optimized for Operational Excellence , Securiry , Reliabil
 
 ## Latest Architecture Design 
 ![Design System Architecture](./images/architecture.png)
+
+## Proposed Database Schema Design
+![Database Schema](./2.2_ER_DIAGRAM.pdf)
