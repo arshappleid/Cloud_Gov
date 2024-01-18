@@ -3,7 +3,7 @@ output "CIDR_Block" {
   description = "Security VPC CIDR"
 }
 
-output "transit_gateway_id"{
-	value = aws_ec2_transit_gateway.Main_Transity_Gateway.id
-	description = "Transit Gateway Id"
+output "transit_gateway_id" {
+  value       = aws_ec2_transit_gateway.Main_Transity_Gateway.id
+  description = "Transit Gateway Id"
 }

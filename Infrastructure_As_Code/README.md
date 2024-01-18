@@ -5,6 +5,7 @@ Each VPC Will be treated as a seperate terraform module, therefore ```terraform 
 ### Architecture Notes
 
 1. Security VPC - Hosts the Transit gateway.
+   1. Still need to configure EC2 instance.
 
 ### Output variables
 
