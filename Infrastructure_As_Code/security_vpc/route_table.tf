@@ -5,9 +5,10 @@ resource "aws_route_table" "security_vpc_route_table" {
     cidr_block = "0.0.0.0/0"  // Traffic to the internet
     gateway_id = aws_internet_gateway.gw.id // Send to the internet gateway
   }
+  // Add other routes here
 }
 
-resource "aws_route_table_association" "route__" {
-  subnet_id      = aws_subnet.example_subnet.id
-  route_table_id = aws_route_table.example_rt.id
+resource "aws_route_table_association" "aws_route_table_association" {
+  subnet_id      = aws_subnet.security_vpc_public_subnet.id
+  route_table_id = aws_route_table.security_vpc_route_table.id
 }
