@@ -1,3 +1,3 @@
-module "transit_gateway"{
-	source = "../security_vpc"
+module "transit_gateway" {
+  source = "../security_vpc"
 }

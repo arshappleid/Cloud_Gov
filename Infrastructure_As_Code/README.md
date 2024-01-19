@@ -2,6 +2,11 @@
 
 Each VPC Will be treated as a seperate terraform module, therefore ```terraform init``` will be run in each vpc folder.
 
+### Useful Links
+
+- [Hashicorp provider documentation](https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs)
+- 
+
 ### Architecture Notes
 
 1. Security VPC - Hosts the Transit gateway.
