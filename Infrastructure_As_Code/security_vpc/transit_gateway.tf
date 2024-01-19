@@ -1,5 +1,8 @@
 resource "aws_ec2_transit_gateway" "Main_Transity_Gateway" {
   description = "Main Transit Gateway"
+  tags = {
+    Name = "Main transit Gateway"
+  }
 }
 
 resource "aws_ec2_transit_gateway_vpc_attachment" "tgw_attachment" {
@@ -12,7 +15,3 @@ resource "aws_ec2_transit_gateway_route_table" "tgw_route_table" {
   transit_gateway_id = aws_ec2_transit_gateway.Main_Transity_Gateway.id
 }
 
-resource "aws_ec2_transit_gateway_route_table_association" "route_table_association" {
-  transit_gateway_attachment_id  = aws_ec2_transit_gateway_vpc_attachment.tgw_attachment.id
-  transit_gateway_route_table_id = aws_ec2_transit_gateway_route_table.tgw_route_table.id
-}
