@@ -44,3 +44,6 @@ variable "ALB_Security_Group_id"{
 variable "ALB_VPC_ID"{
     description = "VPC Id of the ALB is in."
 }
+variable "ASG_SUBNET_ID"{
+    description = "Subnet ID for the Auto Scaling Group"
+}
