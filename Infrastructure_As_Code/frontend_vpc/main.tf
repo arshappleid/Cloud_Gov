@@ -1,7 +1,3 @@
-module "transit_gateway" {
-  source = "../security_vpc"
-}
-
 module "target_group_east1a" {
   source = "./alb_target_group"
   // Input variables

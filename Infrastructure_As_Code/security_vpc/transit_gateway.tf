@@ -1,7 +1,7 @@
 resource "aws_ec2_transit_gateway" "Main_Transity_Gateway" {
   description = "Main Transit Gateway"
   tags = {
-    Name = "Main transit Gateway"
+    Name = "Security_VPC_TGW"
   }
 }
 
