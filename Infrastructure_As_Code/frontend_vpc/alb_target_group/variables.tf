@@ -34,3 +34,7 @@ variable "ASG_min_size" {
     type        = number
     default     = 1
 }
+
+variable "ALB_Id"{
+    description = "Id of the ALB , the target group is supposed to be attached to."
+}

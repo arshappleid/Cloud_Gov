@@ -11,11 +11,13 @@ module "target_group_east1a"{
   ASG_desired_capacity = 2
   ASG_max_size = 5
   ASG_min_size = 1
+  ALB_Id = aws_lb.frontend_alb.id
 }
 
 module "target_group_east1b"{
   source = "./alb_target_group"
   // Input variables
   availability_zone = "us-east-1b"
+  ALB_Id = aws_lb.frontend_alb.id
 }
 
