@@ -1,14 +1,13 @@
-resource "aws_security_group" "ec2_sg" {
-    name        = "ec2-sg"
+resource "aws_security_group" "ASG_sg" {
     description = "Security group for EC2 instances in ASG"
-    vpc_id      = module.alb.VPC_ID
+    vpc_id      = var.ALB_VPC_ID
 
 	// Only allow traffic from the ALB
     ingress {
         from_port   = 80
         to_port     = 80
         protocol    = "tcp"
-        security_groups = [module.alb.ALB_SecurityGroup_Id]
+        security_groups = [var.ALB_Security_Group_id]
     }
 
     egress {

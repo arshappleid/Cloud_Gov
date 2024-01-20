@@ -19,3 +19,11 @@ data "aws_ami" "latest_ami" {
     values = ["amzn2-ami-hvm-*-x86_64-gp2"] // AMI pattern
   }
 }
+
+variable "ec2_vpc_Id"{
+  description = "VPC ID in which the ec2 will be deployed."
+}
+
+variable "ec2_subnet_Id"{
+  description = "Subnet ID in which the ec2 will be deployed."
+}

@@ -34,7 +34,13 @@ variable "ASG_min_size" {
     type        = number
     default     = 1
 }
-
+// Required Info regarding the ALB
 variable "ALB_Id"{
     description = "Id of the ALB , the target group is supposed to be attached to."
+}
+variable "ALB_Security_Group_id"{
+    description = "Id of the Security Group of the ALB , so that the ASG ec2 instances only accept traffic from the ALB"
+}
+variable "ALB_VPC_ID"{
+    description = "VPC Id of the ALB is in."
 }

@@ -1,9 +1,10 @@
 resource "aws_lb" "frontend_alb" {
+    
   name               = "frontend-alb"
   internal           = true
   load_balancer_type = "application"
   security_groups    = [aws_security_group.alb_sg.id]
-  subnets            = []
+  subnets            = [aws_subnet.az1_private_subnet.id,aws_subnet.az2_private_subnet.id]
 
   enable_deletion_protection = false
 }

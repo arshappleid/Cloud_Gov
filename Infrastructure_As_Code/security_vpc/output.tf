@@ -8,7 +8,7 @@ output "Public_Subnet_CIDR_Block"{
   description = "Firewall Ec2 Instance Subnet block"
 }
 output "AMI_Id_Firewall_Instance"{
-  value = aws_instance.firewall_instance.ami
+  value = module.firewall_ec2.ami_Id
 }
 output "transit_gateway_id" {
   value       = aws_ec2_transit_gateway.Main_Transity_Gateway.id

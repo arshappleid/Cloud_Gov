@@ -6,6 +6,7 @@ resource "aws_autoscaling_group" "asg" {
     availability_zones = [var.availability_zone]
     target_group_arns = [aws_lb_target_group.tg.arn]
 
+
     tag {
         key                 = "Name"
         value               = "my-instance"
