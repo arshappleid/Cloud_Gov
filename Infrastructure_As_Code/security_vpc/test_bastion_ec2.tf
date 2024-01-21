@@ -13,6 +13,7 @@ resource "aws_security_group" "bastion_host_sg" {
   count       = var.test == true ? 1 : 0
   description = "Allow traffic from Security VPC"
   vpc_id      = aws_vpc.security_vpc.id
+  
 
   ingress {
     from_port   = 22

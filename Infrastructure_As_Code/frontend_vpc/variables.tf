@@ -40,3 +40,10 @@ data "aws_ec2_transit_gateway" "main_tgw" {
     values = ["Cloud_Gov_TG"]
   }
 }
+
+data "aws_subnets" "frontEnd_vpc_subnets" {
+  filter {
+    name = "vpc-id"
+    values = [aws_vpc.frontend_vpc.id ]
+  }
+}

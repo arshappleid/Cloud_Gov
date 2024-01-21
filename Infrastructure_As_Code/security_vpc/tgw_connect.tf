@@ -23,3 +23,9 @@ resource "aws_ec2_transit_gateway_route_table_propagation" "propogate_routes" {
   transit_gateway_attachment_id  = aws_ec2_transit_gateway_vpc_attachment.tgw_attachment.id
   transit_gateway_route_table_id = aws_ec2_transit_gateway_route_table.tgw_route_table.id
 }
+
+resource "aws_route" "route_to_frontEnd" {
+  route_table_id = aws_vpc.security_vpc.main_route_table_id
+  destination_cidr_block = var.FrontEnd_VPC_CIDR_block
+  transit_gateway_id = data.aws_ec2_transit_gateway.main_tgw.id
+}
