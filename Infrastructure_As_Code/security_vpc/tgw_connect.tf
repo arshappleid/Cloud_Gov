@@ -1,9 +1,3 @@
-resource "aws_ec2_transit_gateway" "Main_Transity_Gateway" {
-  description = "Main Transit Gateway"
-  tags = {
-    Name = "Cloud_Gov_TG"
-  }
-}
 # Create TGW Attachment
 resource "aws_ec2_transit_gateway_vpc_attachment" "tgw_attachment" {
   transit_gateway_id = aws_ec2_transit_gateway.Main_Transity_Gateway.id
@@ -25,7 +19,7 @@ resource "aws_ec2_transit_gateway_route_table_association" "tgw_route_table_asso
 # Add the Route to the Route Table
 resource "aws_ec2_transit_gateway_route" "example_to_vpc" {
   // To : Destination CIDR   go -> Transit Gateway Attachment
-  destination_cidr_block         = var.FrontEnd_VPC_CIDR_block# CIDR block for the other VPC
+  destination_cidr_block         = var.FrontEnd_VPC_CIDR_block # CIDR block for the other VPC
   transit_gateway_route_table_id = aws_ec2_transit_gateway_route_table.tgw_route_table.id
   transit_gateway_attachment_id  = aws_ec2_transit_gateway_vpc_attachment.tgw_attachment.id
 }

@@ -1,9 +1,9 @@
 resource "aws_subnet" "bastion_host_subnet" {
-  count             = var.test == true ? 1 : 0
-  vpc_id            = aws_vpc.security_vpc.id
-  cidr_block        = cidrsubnet(aws_vpc.security_vpc.cidr_block, 8, 3)
-  availability_zone = "us-east-1a"
-   map_public_ip_on_launch = true
+  count                   = var.test == true ? 1 : 0
+  vpc_id                  = aws_vpc.security_vpc.id
+  cidr_block              = cidrsubnet(aws_vpc.security_vpc.cidr_block, 8, 3)
+  availability_zone       = "us-east-1a"
+  map_public_ip_on_launch = true
   tags = {
     Name = "Bastion Host Subnet"
   }
@@ -33,7 +33,7 @@ resource "aws_security_group" "bastion_host_sg" {
   }
 }
 resource "aws_route_table" "bastion_route_table" {
-  count             = var.test == true ? 1 : 0
+  count  = var.test == true ? 1 : 0
   vpc_id = aws_vpc.security_vpc.id
 
   route {
@@ -43,7 +43,7 @@ resource "aws_route_table" "bastion_route_table" {
 }
 
 resource "aws_route_table_association" "example_rta" {
-  count             = var.test == true ? 1 : 0
+  count          = var.test == true ? 1 : 0
   subnet_id      = aws_subnet.bastion_host_subnet[0].id
   route_table_id = aws_route_table.bastion_route_table[0].id
 }
