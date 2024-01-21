@@ -4,6 +4,13 @@ resource "aws_s3_bucket" "flow_logs_bucket" {
   tags={
 	Name = "CloudGov_TGW_Flow_Logs"
   }
+
+  lifecycle_rule{
+	enabled = true
+	expiration {
+	  days = 1
+	}
+  }
   
 }
 

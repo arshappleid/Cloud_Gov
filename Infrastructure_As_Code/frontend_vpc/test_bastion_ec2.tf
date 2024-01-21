@@ -20,7 +20,7 @@ resource "aws_security_group" "bastion_host_sg" {
     protocol    = "tcp"
     cidr_blocks = ["${var.Securtiy_VPC_CIDR}"] # Replace with your specific CIDR block
   }
-
+  # Allow ICMP ping
   ingress {
     from_port   = -1   # For ICMP, -1 signifies all types
     to_port     = -1   # For ICMP, -1 signifies all codes

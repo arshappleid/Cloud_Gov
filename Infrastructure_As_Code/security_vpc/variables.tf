@@ -40,3 +40,11 @@ data "aws_subnets" "security_vpc_subnets" {
     values = [aws_vpc.security_vpc.id ]
   }
 }
+
+data "aws_ec2_transit_gateway_attachment" "frontend_vpc_tgw_attachment" {
+  filter {
+    name   = "tag:Name"
+    values = ["FrontEnd_VPC_TGW_Attachment"]
+  }
+}
+

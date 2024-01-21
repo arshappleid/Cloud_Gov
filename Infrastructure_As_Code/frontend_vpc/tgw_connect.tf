@@ -21,6 +21,8 @@ resource "aws_ec2_transit_gateway_route" "example_to_vpc" {
   transit_gateway_attachment_id  = aws_ec2_transit_gateway_vpc_attachment.tgw_attachment.id
 }
 
+
+
 # Teach about all the routes available through FrontEnd VPC , to the Transity Gateway
 resource "aws_ec2_transit_gateway_route_table_propagation" "propogate_routes" {
   transit_gateway_attachment_id  = aws_ec2_transit_gateway_vpc_attachment.tgw_attachment.id
