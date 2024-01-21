@@ -1,17 +1,18 @@
 # Create an S3 bucket for storing the flow logs
 resource "aws_s3_bucket" "flow_logs_bucket" {
-  bucket = "cloudgov-tgw-flow-logs-bucket"
-  tags={
-	Name = "CloudGov_TGW_Flow_Logs"
+  bucket        = "cloudgov-tgw-flow-logs-bucket"
+  force_destroy = true
+  tags = {
+    Name = "CloudGov_TGW_Flow_Logs"
   }
 
-  lifecycle_rule{
-	enabled = true
-	expiration {
-	  days = 1
-	}
+  lifecycle_rule {
+    enabled = true
+    expiration {
+      days = 1
+    }
   }
-  
+
 }
 
 # Create a flow log for the Transit Gateway

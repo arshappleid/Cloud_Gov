@@ -1,9 +1,9 @@
 resource "aws_subnet" "bastion_host_subnet" {
-  count             = var.test == true ? 1 : 0
-  vpc_id            = aws_vpc.frontend_vpc.id
-  cidr_block        = cidrsubnet(aws_vpc.frontend_vpc.cidr_block, 8, 3)
-  availability_zone = "us-east-1d"
-   map_public_ip_on_launch = true
+  count                   = var.test == true ? 1 : 0
+  vpc_id                  = aws_vpc.frontend_vpc.id
+  cidr_block              = cidrsubnet(aws_vpc.frontend_vpc.cidr_block, 8, 3)
+  availability_zone       = "us-east-1d"
+  map_public_ip_on_launch = true
   tags = {
     Name = "Bastion Host Subnet"
   }
@@ -22,8 +22,8 @@ resource "aws_security_group" "bastion_host_sg" {
   }
   # Allow ICMP ping
   ingress {
-    from_port   = -1   # For ICMP, -1 signifies all types
-    to_port     = -1   # For ICMP, -1 signifies all codes
+    from_port   = -1 # For ICMP, -1 signifies all types
+    to_port     = -1 # For ICMP, -1 signifies all codes
     protocol    = "icmp"
     cidr_blocks = ["0.0.0.0/0"] # Replace with your IP range for more security
   }

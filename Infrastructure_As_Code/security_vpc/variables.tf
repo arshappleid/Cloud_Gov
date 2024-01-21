@@ -36,8 +36,8 @@ data "aws_ami" "latest_amazon_linux" {
 
 data "aws_subnets" "security_vpc_subnets" {
   filter {
-    name = "vpc-id"
-    values = [aws_vpc.security_vpc.id ]
+    name   = "vpc-id"
+    values = [aws_vpc.security_vpc.id]
   }
 }
 
