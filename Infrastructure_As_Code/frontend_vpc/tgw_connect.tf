@@ -16,7 +16,6 @@ resource "aws_ec2_transit_gateway_route_table_association" "tgw_route_table_asso
   transit_gateway_route_table_id = aws_ec2_transit_gateway_route_table.tgw_route_table.id
 }
 
-
 # Add the Route to the Route Table
 resource "aws_ec2_transit_gateway_route" "example_to_vpc" {
   // To : Destination CIDR   go -> Transit Gateway Attachment

@@ -10,7 +10,8 @@ output "Public_Subnet_CIDR_Block" {
 output "AMI_Id_Firewall_Instance" {
   value = module.firewall_ec2.ami_Id
 }
+// Not needed
 output "transit_gateway_id" {
-  value       = aws_ec2_transit_gateway.Main_Transity_Gateway.id
+  value       = data.aws_ec2_transit_gateway.main_tgw.id
   description = "Transit Gateway Id"
 }

@@ -12,6 +12,14 @@ variable "FrontEnd_VPC_CIDR_block" {
   type    = string
   default = "10.2.0.0/16"
 }
+
+data "aws_ec2_transit_gateway" "main_tgw" {
+  filter {
+    name   = "tag:Name"
+    values = ["Cloud_Gov_TG"]
+  }
+}
+
 data "aws_ami" "latest_amazon_linux" {
   most_recent = true
 
@@ -23,5 +31,12 @@ data "aws_ami" "latest_amazon_linux" {
   filter {
     name   = "owner-alias"
     values = ["amazon"]
+  }
+}
+
+data "aws_subnets" "security_vpc_subnets" {
+  filter {
+    name = "vpc-id"
+    values = [aws_vpc.security_vpc.id ]
   }
 }
