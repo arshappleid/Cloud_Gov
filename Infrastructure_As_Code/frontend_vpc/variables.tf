@@ -19,6 +19,7 @@ variable "Securtiy_VPC_CIDR" {
   default = "10.1.0.0/16"
 }
 
+
 data "aws_ami" "latest_amazon_linux" {
   most_recent = true
 
@@ -36,6 +37,6 @@ data "aws_ami" "latest_amazon_linux" {
 data "aws_ec2_transit_gateway" "main_tgw" {
   filter {
     name   = "tag:Name"
-    values = ["Security_VPC_TGW"]
+    values = ["Cloud_Gov_TG"]
   }
 }
