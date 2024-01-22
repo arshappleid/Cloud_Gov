@@ -2,7 +2,7 @@ resource "aws_subnet" "bastion_host_subnet" {
   count                   = var.test == true ? 1 : 0
   vpc_id                  = aws_vpc.security_vpc.id
   cidr_block              = cidrsubnet(aws_vpc.security_vpc.cidr_block, 8, 3)
-  availability_zone       = "us-east-1a"
+  availability_zone       = "us-east-1b"
   map_public_ip_on_launch = true
   tags = {
     Name = "Bastion Host Subnet"

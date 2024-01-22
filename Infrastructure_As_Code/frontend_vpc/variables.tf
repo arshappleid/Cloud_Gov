@@ -1,5 +1,5 @@
 variable "test" {
-  default     = false
+  default     = true
   type        = bool
   description = "Use this to initialize the test environment"
 }

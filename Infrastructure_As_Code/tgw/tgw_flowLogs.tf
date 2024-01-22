@@ -1,7 +1,7 @@
 # Create an S3 bucket for storing the flow logs
 resource "aws_s3_bucket" "flow_logs_bucket" {
   bucket        = "cloudgov-tgw-flow-logs-bucket"
-  force_destroy = true
+  force_destroy = var.env == "true" ? true: false
   tags = {
     Name = "CloudGov_TGW_Flow_Logs"
   }
