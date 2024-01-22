@@ -52,3 +52,6 @@ resource "aws_instance" "test_bastion_host" {
     Name = "Test Bastion Host - FrontEnd VPC"
   }
 }
+
+
+
