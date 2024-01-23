@@ -1,13 +1,8 @@
 variable "test" {
-  default     = false
   type        = bool
-  description = "Use this to initialize the test environment"
+  description = "Boolean , enable test environment ?"
 }
 
-variable "Tester_PC_IP" {
-  description = "Your PC's IP address for SSH access"
-  type        = string
-}
 variable "FrontEnd_VPC_CIDR_block" {
   type    = string
   default = "10.2.0.0/16"
@@ -45,6 +40,13 @@ data "aws_ec2_transit_gateway_attachment" "frontend_vpc_tgw_attachment" {
   filter {
     name   = "tag:Name"
     values = ["FrontEnd_VPC_TGW_Attachment"]
+  }
+}
+
+data "aws_instance" "frontEnd_VPC_Bastion_host"{
+  filter{
+    name = "tag:Name"
+    values = ["Test Bastion Host - FrontEnd VPC"]
   }
 }
 

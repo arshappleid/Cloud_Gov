@@ -5,7 +5,7 @@ resource "aws_subnet" "bastion_host_subnet" {
   availability_zone       = "us-east-1d"
   map_public_ip_on_launch = true
   tags = {
-    Name = "Bastion Host Subnet"
+    Name = "FrontEnd_VPC_Bastion_Host_Subnet"
   }
 }
 

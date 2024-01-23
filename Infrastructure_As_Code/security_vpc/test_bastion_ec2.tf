@@ -5,7 +5,7 @@ resource "aws_subnet" "bastion_host_subnet" {
   availability_zone       = "us-east-1b"
   map_public_ip_on_launch = true
   tags = {
-    Name = "Bastion Host Subnet"
+    Name = "Security_VPC_Bastion_Host_Subnet"
   }
 }
 
@@ -20,6 +20,13 @@ resource "aws_security_group" "bastion_host_sg" {
     to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"] # Replace with your specific CIDR block
+  }
+
+  ingress {
+    from_port   = -1 # For ICMP, from_port and to_port are set to -1
+    to_port     = -1
+    protocol    = "icmp"
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   egress {

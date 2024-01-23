@@ -10,7 +10,7 @@ resource "aws_autoscaling_group" "asg" {
 
     tag {
         key                 = "Name"
-        value               = "my-instance"
+        value               = "FrontEnd_VPC_ASG_Instance"
         propagate_at_launch = true
     }
 }

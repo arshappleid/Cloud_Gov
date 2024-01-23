@@ -12,7 +12,7 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "tgw_attachment" {
 # Create the Route Table
 resource "aws_ec2_transit_gateway_route_table" "tgw_route_table" {
   transit_gateway_id = data.aws_ec2_transit_gateway.main_tgw.id
-  tags={
+  tags = {
     Name = "FrontEnd_VPC_TGW_Attach_Route_Table"
   }
 }

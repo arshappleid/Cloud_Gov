@@ -3,7 +3,7 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "tgw_attachment" {
   transit_gateway_id = data.aws_ec2_transit_gateway.main_tgw.id
   vpc_id             = aws_vpc.security_vpc.id
   subnet_ids         = data.aws_subnets.security_vpc_subnets.ids
-  depends_on = [ aws_vpc.security_vpc, aws_subnet.security_vpc_public_subnet ]
+  depends_on         = [aws_vpc.security_vpc, aws_subnet.security_vpc_public_subnet]
   tags = {
     Name = "Security_VPC_TGW_Attachment"
   }
@@ -11,7 +11,7 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "tgw_attachment" {
 # Create the Route Table for the 
 resource "aws_ec2_transit_gateway_route_table" "tgw_route_table" {
   transit_gateway_id = data.aws_ec2_transit_gateway.main_tgw.id
-  tags={
+  tags = {
     Name = "BackEnd_VPC_TGW_Attach_Route_Table"
   }
 }
