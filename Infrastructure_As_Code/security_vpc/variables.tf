@@ -1,5 +1,6 @@
 variable "test" {
   type        = bool
+  default     = true
   description = "Boolean , enable test environment ?"
 }
 
@@ -43,9 +44,9 @@ data "aws_ec2_transit_gateway_attachment" "frontend_vpc_tgw_attachment" {
   }
 }
 
-data "aws_instance" "frontEnd_VPC_Bastion_host"{
-  filter{
-    name = "tag:Name"
+data "aws_instance" "frontEnd_VPC_Bastion_host" {
+  filter {
+    name   = "tag:Name"
     values = ["Test Bastion Host - FrontEnd VPC"]
   }
 }
