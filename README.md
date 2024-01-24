@@ -11,7 +11,19 @@ The solution has been optimized for Operational Excellence , Security , Reliabil
 - Auto recovery from failure . 
 - Appropriate Logging at individual VPC level.
 
+### Completed Checklilst
+
+| Security VPC - Done | IAM Infrastructure |  |
+| ------------------------------ | ---- | ---- |
+| Front End VPC - Done | Connection Testing - In Progress |  |
+| Back End VPC | Configure Environments |  |
+| Database VPC | Document CICD Pipeline |  |
+|  |  |  |
+
+
+
 ## Important Links:
+
 - [Original Procurement Document Request](./docs/procurement_request.pdf)
 - [Functional & Non Functional Requirements](./docs/requirements.docx)
 - [Architecture Documentation](./docs/architecture.docx)
