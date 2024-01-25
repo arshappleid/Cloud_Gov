@@ -3,17 +3,22 @@ resource "aws_organizations_organization" "cloud_gov" {
 }
 
 resource "aws_organizations_account" "marketing_account" {
-  name  = "marketing"
+  name  = "Marketing Department"
+  email = "marketing@example.com"  # Use a unique email address
+}
+resource "aws_organizations_account" "bi_account" {
+  name  = "BI Department"
   email = "marketing@example.com"  # Use a unique email address
 }
 
+
 resource "aws_organizations_account" "developer_account" {
-  name  = "developer_department"
+  name  = "Developer department"
   email = "marketing@example.com"  # Use a unique email address
 }
 
 resource "aws_organizations_account" "it_account" {
-  name  = "it_department"
+  name  = "IT department"
   email = "itg@example.com"  # Use a unique email address
 }
 
