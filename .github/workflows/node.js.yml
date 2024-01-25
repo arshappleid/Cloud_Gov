@@ -43,7 +43,7 @@ jobs:
             - name: Check for changes in Presentation
               id: check_changes
               run: |
-                  echo "::set-output name=changed::$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -q 'closing_presentation.md' && echo 'true' || echo 'false')"
+                  echo "::set-output name=changed::$(git diff --name-only HEAD^ HEAD | grep -q 'closing_presentation.md' && echo 'true' || echo 'false')"
 
             - name: Generate Presentation PDF
               if: steps.check_changes.outputs.changed == 'true'
