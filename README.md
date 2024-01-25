@@ -38,5 +38,8 @@ The solution has been optimized for Operational Excellence , Security , Reliabil
 ## Latest Architecture Design 
 ![Design System Architecture](./images/architecture.png)
 
+## IAM Infrastructure
+![IAM Infrastructure](./images/IAM_Infrastructure.png)
+
 ## Proposed Database Schema Design
 ![Database Schema](./2.2_ER_DIAGRAM.pdf)
