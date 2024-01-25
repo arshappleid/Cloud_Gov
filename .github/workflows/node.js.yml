@@ -4,42 +4,44 @@
 name: Node.js CI
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    push:
+        branches: ["main"]
+    pull_request:
+        branches: ["main"]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    env:
-      TF_DIRS: "./infrastructure_As_Code/security_vpc ./infrastructure_As_Code/frontend_vpc" # Define your Terraform directories here
+    build:
+        runs-on: ubuntu-latest
+        env:
+            TF_DIRS: "./infrastructure_As_Code/security_vpc ./infrastructure_As_Code/frontend_vpc" # Define your Terraform directories here
 
-    steps:
-    - uses: actions/checkout@v2
+        steps:
+            - uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: '16'
+            - name: Set up Node.js
+              uses: actions/setup-node@v1
+              with:
+                  node-version: "14"
 
-    - name: Install Dependencies
-      run: npm install
+            - name: Install Dependencies
+              run: npm install
 
-    - name: Run Terraform Format in Specific Directories
-      uses: hashicorp/setup-terraform@v1
-      with:
-        terraform_version: 'latest'
-      run: |
-        for dir in $TF_DIRS; do
-          terraform fmt $dir
-        done
+            - name: Set up Terraform
+              uses: hashicorp/setup-terraform@v1
+              with:
+                  terraform_version: "latest"
 
-    - name: Check for changes in Presentation
-      id: check_changes
-      run: |
-        echo "::set-output name=changed::$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -q 'closing_presentation.md' && echo 'true' || echo 'false')"
+            - name: Run Terraform Format in Specific Directories
+              run: |
+                  for dir in $TF_DIRS; do
+                    terraform fmt $dir
+                  done
 
-    - name: Generate Presentation PDF
-      if: steps.check_changes.outputs.changed == 'true'
-      run: npx @marp-team/marp-cli@closing_presentation.md -o presentation.pdf
+            - name: Check for changes in Presentation
+              id: check_changes
+              run: |
+                  echo "::set-output name=changed::$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -q 'closing_presentation.md' && echo 'true' || echo 'false')"
+
+            - name: Generate Presentation PDF
+              if: steps.check_changes.outputs.changed == 'true'
+              run: npx @marp-team/marp-cli@closing_presentation.md -o presentation.pdf
