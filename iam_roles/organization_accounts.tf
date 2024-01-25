@@ -2,6 +2,10 @@ resource "aws_organizations_organization" "cloud_gov" {
   feature_set = "ALL"
 }
 
+
+
+
+
 resource "aws_organizations_account" "marketing_account" {
   name  = "Marketing Department"
   email = "marketing@example.com"  # Use a unique email address
