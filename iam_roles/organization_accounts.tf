@@ -11,7 +11,6 @@ resource "aws_organizations_account" "bi_account" {
   email = "marketing@example.com"  # Use a unique email address
 }
 
-
 resource "aws_organizations_account" "developer_account" {
   name  = "Developer department"
   email = "marketing@example.com"  # Use a unique email address
