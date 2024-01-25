@@ -12,7 +12,6 @@ transition: fade 1s
 	- Wants all applications , to have access to one database instance.
 	- Wants to have a one point traffic management / recording resource.
 	- Wants to implement secure single - sign on features for their employees.
-	- Some change to presentation yes
 
 ---
 
