@@ -13,7 +13,7 @@ jobs:
     build:
         runs-on: ubuntu-latest
         env:
-            TF_DIRS: "./infrastructure_As_Code/security_vpc ./infrastructure_As_Code/frontend_vpc" # Define your Terraform directories here
+            TF_DIRS: "./Infrastructure_As_Code/security_vpc ./Infrastructure_As_Code/frontend_vpc" # Define your Terraform directories here
 
         steps:
             - uses: actions/checkout@v2
