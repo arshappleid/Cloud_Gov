@@ -3,6 +3,23 @@ A cloud solution for a subset of government organization , that has multiple wor
 
 The solution has been optimized for Operational Excellence , Security , Reliability , Performance , Cost Optimization. While also taking into Governance practices into account.
 
+## Repo Design
+```
+.
+├── docs # All the Documentation files are in this folder
+│ ├── closing_presentation.pptx # Small Presentation with an overview of project
+│ ├── procurement_request # Initial project request , highlightign high-level requirements of the project.
+│ ├── requirements.docx # Final requirements for the project.
+│ └── ...
+├── iam_role # All the code related to setting up authentication. 
+├── infrastructure_As_Code # All the code for different resources in the solution , organized by VPC names.
+├── database.sql # Potential Schema design for an application
+└── README.md
+
+
+
+```
+
 ## Requirements Overview:
 
 - Multi AZ Availability for high Availability.
