@@ -12,4 +12,6 @@ resource "aws_directory_service_directory" "cloud_gov_ad" {
   tags = {
     Project = "Cloud Gov AD"
   }
+
+  description = "Microsoft AD Setup , to manage authentication access all the cloud resources for Cloud Gov"
 }
