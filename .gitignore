@@ -12,3 +12,5 @@ override.tf.json
 terraform.rc
 # Some mac os file , that you do not want
 .DS_Store
+# Unnessccasry doc files
+**/~$**
