@@ -16,8 +16,6 @@ The solution has been optimized for Operational Excellence , Security , Reliabil
 ├── database.sql # Potential Schema design for an application
 └── README.md
 
-
-
 ```
 
 ## Requirements Overview:
