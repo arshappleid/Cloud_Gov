@@ -51,10 +51,10 @@ The solution has been optimized for Operational Excellence , Security , Reliabil
 - [Testing Procedure](./docs/testing_procedures.docx)
 
 ## Latest Architecture Design 
-![Design System Architecture](./images/architecture.png)
+<img src="./images/architecture.png" alt="Design System Architecture" style="zoom: 50%;" />
 
 ## IAM Infrastructure
-![IAM Infrastructure](./images/IAM_Infrastructure.png)
+<img src="./images/IAM_Infrastructure.png" alt="IAM Infrastructure" style="zoom: 33%;" />
 
 ## Proposed Database Schema Design
-![Database Schema](./2.2_ER_DIAGRAM.pdf)
+<img src="./docs/ER_Diagram.png" alt="Database Schema" style="zoom: 33%;" />
