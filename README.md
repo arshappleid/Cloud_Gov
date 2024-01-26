@@ -35,7 +35,7 @@ The solution has been optimized for Operational Excellence , Security , Reliabil
 | Database VPC | Document CICD Pipeline |  |
 | Active Directory VPC |  |  |
 
-### Security Principles Implemented
+### Security Risks Identified
 - Broken Access Control / In efficient Access Control - Seperate AD VPC .
 - Secure Infrastructure Design - Implementing aws secure architecture design.
 - Security Logging and Monitoring - Cloud Watch Alarms , and Logs Recording.
