@@ -24,6 +24,10 @@ variable "ec2_vpc_Id"{
   description = "VPC ID in which the ec2 will be deployed."
 }
 
-variable "ec2_subnet_Id"{
+variable "ec2_subnet1_Id"{
+  description = "Subnet ID in which the ec2 will be deployed."
+}
+
+variable "ec2_subnet2_Id"{
   description = "Subnet ID in which the ec2 will be deployed."
 }

@@ -3,7 +3,7 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "tgw_attachment" {
   transit_gateway_id = data.aws_ec2_transit_gateway.main_tgw.id
   vpc_id             = aws_vpc.security_vpc.id
   subnet_ids         = data.aws_subnets.security_vpc_subnets.ids
-  depends_on         = [aws_vpc.security_vpc, aws_subnet.security_vpc_public_subnet]
+  depends_on         = [aws_vpc.security_vpc,aws_subnet.security_vpc_public_subnet , aws_subnet.security_vpc_private_subnet2 , aws_subnet.security_vpc_private_subnet2]
   tags = {
     Name = "Security_VPC_TGW_Attachment"
   }
