@@ -30,10 +30,10 @@ The solution has been optimized for Operational Excellence , Security , Reliabil
 
 | Security VPC - Done | IAM Infrastructure |  |
 | ------------------------------ | ---- | ---- |
-| Front End VPC - Done | Connection Testing - In Progress |  |
-| Back End VPC | Configure Environments |  |
-| Database VPC | Document CICD Pipeline |  |
-| Active Directory VPC |  |  |
+| Front End VPC - Done | Connection Testing - In Progress |MultiCloud Risk Backup Strategy  |
+| Back End VPC | Configure Environments | Deploy developer unit for development |
+| Database VPC | Propose CICD Pipeline |  |
+| Active Directory VPC | Logging at VPC Level |  |
 
 ### Security Risks Identified
 - Broken Access Control / In efficient Access Control - Seperate AD VPC .
