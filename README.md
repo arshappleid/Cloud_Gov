@@ -51,7 +51,7 @@ The solution has been optimized for Operational Excellence , Security , Reliabil
 * High Availability - Multi-AZ deployment , Que - Based Load Leveling , Database Connection pool.
 * Resiliency - Backup Solution (Azure Backup Solution), Retry, Health Endpoint Monitoring.
 * Monitoring - Health , Availability , Performance , Security , Usage , Alerts.
-* Security - Gatekeepr VPC , Federated Identity (Microsoft AD).
+* Security - Gatekeepr VPC , Federated Identity (Microsoft AD) , Network Segmentation.
 
 ## Important Links:
 
