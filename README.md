@@ -10,7 +10,7 @@ The solution has been optimized for Operational Excellence , Security , Reliabil
 .
 ├── docs # All the Documentation files are in this folder
 │ ├── closing_presentation.pptx # Small Presentation with an overview of project
-│ ├── procurement_request # Initial project request , highlightign high-level requirements of the project.
+│ ├── procurement_request # Initial project request , highlighting high-level requirements of the project.
 │ ├── requirements.docx # Final requirements for the project.
 │ └── ...
 ├── iam_role # All the code related to setting up authentication. 
@@ -24,9 +24,13 @@ The solution has been optimized for Operational Excellence , Security , Reliabil
 
 - Multi AZ Availability for high Availability.
 - Multi VPC Structure to design a cohesive Infrastructure , for future projects to be able to scale.
-- Scaling capacity , to endure high number of User Requests.
-- Auto recovery from failure .
+- Auto recovery from failure, with very little downtime. Less than 5 minutes.
 - Appropriate Logging at individual VPC level.
+- There can be upto 100000 concurrent users of the application , at one time during peak hours. Should have high Scaling capacity , to endure high number of User Requests.
+- Application should have access from all states of America, with very low latecy. Although , should only be deployed close to MD , for security purposes.
+  - Occasionally people might also access it from other parts of the world, and should have access to the application with low latency as well.
+- Deploy, plan to maintain and rotate SSL certificates on Endpoints using AWS Ceritificate Manager.
+- Document all security compliance rules through AWS Config.
 
 ### Completed Checklilst
 
