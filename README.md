@@ -69,6 +69,11 @@ The solution has been optimized for Operational Excellence , Security , Reliabil
 
 <img src="./images/architecture.png" alt="Design System Architecture" style="zoom: 50%;" />
 
+## CICD Pipeline
+
+<img src="./images/cicd_pipeline.png" alt="CICD Pipeline" style="zoom: 65%;" />
+
+
 ## IAM Infrastructure
 
 <img src="./images/IAM_Infrastructure.png" alt="IAM Infrastructure" style="zoom: 33%;" />
