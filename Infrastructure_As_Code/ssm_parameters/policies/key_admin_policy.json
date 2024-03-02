@@ -1,0 +1,41 @@
+{
+	"KeyPolicy": {
+		"Version": "2024-03-01",
+		"Statement": [
+			{
+				"Sid": "KeyRotationPolicy",
+				"Effect": "Allow",
+				"Action": [
+					"kms:Create*",
+					"kms:Describe*",
+					"kms:Enable*",
+					"kms:List*",
+					"kms:Put*",
+					"kms:Update*",
+					"kms:Revoke*",
+					"kms:Disable*",
+					"kms:Get*",
+					"kms:TagResource",
+					"kms:UntagResource",
+					"kms:ScheduleKeyDeletion",
+					"kms:CancelKeyDeletion",
+					"kms:EnableKeyRotation"
+				],
+				"Resource": "kms:*"
+			},
+			{
+				"Sid": "AuditLogging",
+				"Effect": "Allow",
+				"Principal": { "Service": "cloudtrail.amazonaws.com" },
+				"Action": [
+					"kms:GenerateDataKey*",
+					"kms:Decrypt",
+					"kms:Encrypt",
+					"kms:ReEncrypt*",
+					"kms:DescribeKey"
+				],
+				"Resource": "*"
+			}
+		]
+	}
+}
