@@ -1,8 +1,8 @@
 ## Description
 
-A cloud solution for a subset of government organization , that has multiple workflow apps deployed to manage day to day management tasks and relay valuable information to people. This cloud Solution can act as a template to manage their overall cloud infrastructure , and expand their network to allow for additional apps in the future. By providing seamless , and easy integration to their current secure infrastructure.
+A cloud solution for a subset of government organization, created using NSA and CISA  Top 10 Cybersecurity Mitigation Strategies. This cloud Solution can act as a template to manage their overall cloud infrastructure , and expand their network to allow for additional apps in the future. By providing seamless , and easy integration to their current secure infrastructure.
 
-The solution has been optimized for Operational Excellence , Security , Reliability , Performance , Cost Optimization. While also taking into Governance practices into account.
+The solution has been optimized for Operational Excellence , Security , Reliability , Performance , Cost Optimization. It has also been made sure to meet the Impact level 4 requirements as per [Department of  Defense (DOD) IL-4 Guidelines](./docs/DOD_IL_Requirements.pdf) from DISA, [NSA Top 10 Security Strategy](./docs/NSA_Top10_Security_Strategy), and [OWASP Top 10 Security Risks](https://owasp.org/www-project-top-ten/).
 
 ## Repo Design
 
@@ -32,16 +32,16 @@ The solution has been optimized for Operational Excellence , Security , Reliabil
 - Deploy, plan to maintain and rotate SSL certificates on Endpoints using AWS Ceritificate Manager.
 - Document all security compliance rules through AWS Config.
 
-### Completed Checklilst
+## Department of Defense Impact Level 4 Requirements
 
-| Security VPC - Done  | IAM Infrastructure               |                                       |
-| -------------------- | -------------------------------- | ------------------------------------- |
-| Front End VPC - Done | Connection Testing - In Progress | MultiCloud Risk Backup Strategy       |
-| Back End VPC         | Configure Environments           | Deploy developer unit for development |
-| Database VPC         | Propose CICD Pipeline            |                                       |
-| Active Directory VPC | Logging at VPC Level             |                                       |
+- Support for PKI authentication by DID priveleged and non priveleged users.
+- Support for DOD IP Addressing.
+- Encryption of Data at Rest
+- Cloud Solution (CSO) must be able to function if DOD limits access to or disconnects from the internet during times of attack.
+- Any access to internet from the CSO , must be through a <u>specific Internet Line</u>.
+- Prevent any backdoor access from the internet.
 
-### Security Risks Identified
+### Security Risks Identified and accounted for
 
 - Broken Access Control / In efficient Access Control - Seperate AD VPC .
 - Secure Infrastructure Design - Implementing aws secure architecture design.
@@ -56,6 +56,22 @@ The solution has been optimized for Operational Excellence , Security , Reliabil
 * Resiliency - Backup Solution (Azure Backup Solution), Retry, Health Endpoint Monitoring.
 * Monitoring - Health , Availability , Performance , Security , Usage , Alerts.
 * Security - Gatekeepr VPC , Federated Identity (Microsoft AD) , Network Segmentation.
+
+## Maintenance after Deployment
+
+- Rotate passwords every n days , for users accessing cloud resources.
+  - Continue with 2 MFA Account login , for users.
+- Analyze Cloudwatch Logs , to look for any malicious activity.
+- Respond to SNS notifications, regarding any changes in cloud infrastructure.
+
+### Completed Checklilst
+
+| Security VPC - Done  | IAM Infrastructure               |                                       |
+| -------------------- | -------------------------------- | ------------------------------------- |
+| Front End VPC - Done | Connection Testing - In Progress | MultiCloud Risk Backup Strategy       |
+| Back End VPC         | Configure Environments           | Deploy developer unit for development |
+| Database VPC         | Propose CICD Pipeline            |                                       |
+| Active Directory VPC | Logging at VPC Level             |                                       |
 
 ## Important Links:
 
