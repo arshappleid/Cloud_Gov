@@ -57,6 +57,16 @@ The solution has been optimized for Operational Excellence , Security , Reliabil
 * Monitoring - Health , Availability , Performance , Security , Usage , Alerts.
 * Security - Gatekeepr VPC , Federated Identity (Microsoft AD) , Network Segmentation.
 
+## Infrastructure as Code Coding Strategy
+
+IAC was coded with reusability in mind , and also the networking components were seperated from actual Infrastructure. This was to make sure everytime we have to make changes to the actual infrastructure , we do not risk taking down the main networking components. 
+
+[Terraform Testing](https://www.hashicorp.com/blog/testing-hashicorp-terraform) strategy was used to test individual components of the infrastructure.  
+
+## Provisioning of PKI Keys
+
+PKI keys are provisioned using Terraform Vault , as this gave the oppurtunity to provision the keys in the multi cloud infrastructure.
+
 ## Maintenance after Deployment
 
 - Rotate passwords every n days , for users accessing cloud resources.
@@ -77,9 +87,6 @@ The solution has been optimized for Operational Excellence , Security , Reliabil
 
 - [Original Procurement Document Request](./docs/procurement_request.pdf)
 - [Functional &amp; Non Functional Requirements](./docs/requirements.docx)
-- [Architecture Documentation](./docs/architecture.docx)
-- [Infrastructure as Code](./Infrastructure_as_Code)
-- [Testing Procedure](./docs/testing_procedures.docx)
 
 ## Latest Architecture Design
 
