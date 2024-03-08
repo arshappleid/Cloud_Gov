@@ -99,7 +99,26 @@ PKI keys are provisioned using Terraform Vault , as this gave the oppurtunity to
 
 ## IAM Infrastructure
 
+### Infrastructure Management Accounts
+
+![image-20240307131323080](/Users/pdeol/Library/Application Support/typora-user-images/image-20240307131323080.png)
+
+### Team Management Accounts
+
 <img src="./images/IAM_Infrastructure.png" alt="IAM Infrastructure" style="zoom: 33%;" />
+
+## Threat Detection, Monitoring and response , after Deployment
+
+1. Through Security Hub:
+   1. Respond to AWS [Guard Duty](https://aws.amazon.com/guardduty/) EMAIL notifications.
+      1. Will notify regarding : Unusual API calls, or unauthorized deployments.
+      2. VPC Logs , DNS Logs , CloudTrail Events.
+   2. AWS Macie Notifications regarding AWS Account Best Practices.
+   3. Inspector - Any security issues from AMI Images.
+2. Analyze network logs Dashboards, to understand and lookup any unauthorized access.
+3. Monitor Account Access through AWS Control Tower.
+4. Follow , and make changes if Trusted Advisor advices of any more best practices.
+5. Provision SSM Parameters through [Terraform Vault](https://registry.terraform.io/providers/hashicorp/vault/latest/docs).
 
 ## Proposed Database Schema Design
 
