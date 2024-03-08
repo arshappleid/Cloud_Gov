@@ -38,7 +38,7 @@ The solution has been optimized for Operational Excellence , Security , Reliabil
 - Support for DOD IP Addressing.
 - Encryption of Data at Rest
 - Cloud Solution (CSO) must be able to function if DOD limits access to or disconnects from the internet during times of attack.
-- Any access to internet from the CSO , must be through a <u>specific Internet Line</u>.
+- Any access to internet from the CSO , must be through a `<u>`specific Internet Line `</u>`.
 - Prevent any backdoor access from the internet, and any traffic to the internet should be monitored.
 
 ### Security Risks Identified and accounted for
@@ -51,6 +51,7 @@ The solution has been optimized for Operational Excellence , Security , Reliabil
 ### System Design Choices Implemented
 
 * Caching - CDN Caching through Cloudfront , Cache Aside (S3 bucket), Write Behind (FIFO Que).
+* Performance - Increase MTU Size for Packets , Create a gateway Endpoint for S3 bucket to be accessed inside the network.
 * Database Caching - Aurora Buffer pool, connection pooling.
 * High Availability - Multi-AZ deployment , Que - Based Load Leveling , Database Connection pool.
 * Resiliency - Backup Solution (Azure Backup Solution), Retry, Health Endpoint Monitoring.
@@ -59,9 +60,9 @@ The solution has been optimized for Operational Excellence , Security , Reliabil
 
 ## Infrastructure as Code Coding Strategy
 
-IAC was coded with reusability in mind , and also the networking components were seperated from actual Infrastructure. This was to make sure everytime we have to make changes to the actual infrastructure , we do not risk taking down the main networking components. 
+IAC was coded with reusability in mind , and also the networking components were seperated from actual Infrastructure. This was to make sure everytime we have to make changes to the actual infrastructure , we do not risk taking down the main networking components.
 
-[Terraform Testing](https://www.hashicorp.com/blog/testing-hashicorp-terraform) strategy was used to test individual components of the infrastructure.  
+[Terraform Testing](https://www.hashicorp.com/blog/testing-hashicorp-terraform) strategy was used to test individual components of the infrastructure.
 
 ## Provisioning of PKI Keys
 
@@ -74,7 +75,6 @@ PKI keys are provisioned using Terraform Vault , as this gave the oppurtunity to
 - Analyze Cloudwatch Logs , to look for any malicious activity.
 - Respond to SNS notifications, regarding any changes in cloud infrastructure.
 
-
 ## Important Links:
 
 - [Original Procurement Document Request](./docs/procurement_request.pdf)
@@ -85,16 +85,15 @@ PKI keys are provisioned using Terraform Vault , as this gave the oppurtunity to
 
 <img src="./images/architecture.png" alt="Design System Architecture" style="zoom: 50%;" />
 
-## CICD Pipeline
+## Sample CICD Pipeline
 
 <img src="./images/cicd_pipeline.png" alt="CICD Pipeline" style="zoom: 65%;" />
-
 
 ## IAM Infrastructure
 
 ### Infrastructure Management Accounts
 
-![image-20240307131323080](/Users/pdeol/Library/Application Support/typora-user-images/image-20240307131323080.png)
+![Security Account](./images/Security_account.png)
 
 ### Team Management Accounts
 
