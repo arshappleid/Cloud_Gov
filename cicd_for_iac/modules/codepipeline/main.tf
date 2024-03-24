@@ -23,9 +23,9 @@ resource "aws_codepipeline" "terraform_pipeline" {
     name = "Source"
 
     action {
-      name             = "GitHub_Source"
+      name             = "Source"
       category         = "Source"
-      owner            = "ThirdParty"
+      owner            = "AWS"
       version          = "1"
       provider         = "Github"
       namespace        = "SourceVariables"

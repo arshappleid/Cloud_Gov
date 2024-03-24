@@ -6,10 +6,9 @@
 
 #Module for creating a new S3 bucket for storing pipeline artifacts
 module "s3_artifacts_bucket" {
-  source                = "./modules/s3"
-  project_name          = var.project_name
-  kms_key_arn           = module.codepipeline_kms.arn
-  codepipeline_role_arn = module.codepipeline_iam_role.role_arn
+  source       = "./modules/s3"
+  project_name = var.project_name
+  kms_key_arn  = module.codepipeline_kms.arn
   tags = {
     Project_Name = var.project_name
     Environment  = var.environment
@@ -31,16 +30,15 @@ module "github_webhook" {
 
 # Module for Infrastructure Validation - CodeBuild
 module "codebuild_terraform" {
-  depends_on = [
-    module.github_webhook
-  ]
   source                              = "./modules/codebuild"
   CODE_SRC_URL                        = var.CODE_SRC_URL
   project_name                        = var.project_name
-  role_arn                            = module.codepipeline_iam_role.role_arn
+  role_arn                            = module.iam_roles.codebuild_role_arn
+  codebuild_role_id                   = module.iam_roles.codebuild_role_id
   s3_bucket_name                      = module.s3_artifacts_bucket.bucket
+  secret_access_key_path              = var.secret_access_key_path
+  secret_secret_key_path              = var.secret_secret_key_path
   build_projects                      = var.build_projects
-  build_project_source                = var.build_project_source
   builder_compute_type                = var.builder_compute_type
   builder_image                       = var.builder_image
   builder_image_pull_credentials_type = var.builder_image_pull_credentials_type
@@ -55,8 +53,7 @@ module "codebuild_terraform" {
 }
 
 module "codepipeline_kms" {
-  source                = "./modules/kms"
-  codepipeline_role_arn = module.codepipeline_iam_role.role_arn
+  source = "./modules/kms"
   tags = {
     Project_Name = var.project_name
     Environment  = var.environment
@@ -66,14 +63,18 @@ module "codepipeline_kms" {
 
 }
 
-module "codepipeline_iam_role" {
+module "iam_roles" {
+
   source                     = "./modules/iam-role"
   project_name               = var.project_name
-  create_new_role            = var.create_new_role
-  codepipeline_iam_role_name = var.create_new_role == true ? "${var.project_name}-codepipeline-role" : var.codepipeline_iam_role_name
+  codepipeline_iam_role_name = "${var.project_name}-codepipeline-role"
   source_repository_name     = var.source_repo_name
+  encryption_key_id          = module.codepipeline_kms.key_id
   kms_key_arn                = module.codepipeline_kms.arn
   s3_bucket_arn              = module.s3_artifacts_bucket.arn
+  s3_bucket_id               = module.s3_artifacts_bucket.id
+  s3_replication_bucket_id   = module.s3_artifacts_bucket.replication_bucket_id
+  s3_replication_bucket_arn  = module.s3_artifacts_bucket.replication_bucket_arn
   tags = {
     Project_Name = var.project_name
     Environment  = var.environment
@@ -83,10 +84,7 @@ module "codepipeline_iam_role" {
 }
 # Module for Infrastructure Validate, Plan, Apply and Destroy - CodePipeline
 module "codepipeline_terraform" {
-  depends_on = [
-    module.codebuild_terraform,
-    module.s3_artifacts_bucket
-  ]
+
   source = "./modules/codepipeline"
 
   project_name            = var.project_name
@@ -96,7 +94,7 @@ module "codepipeline_terraform" {
   source_repo_name        = var.source_repo_name
   source_repo_branch      = var.source_repo_branch
   s3_bucket_name          = module.s3_artifacts_bucket.bucket
-  codepipeline_role_arn   = module.codepipeline_iam_role.role_arn
+  codepipeline_role_arn   = module.iam_roles.codepipeline_role_arn
   stages                  = var.stage_input
   kms_key_arn             = module.codepipeline_kms.arn
   tags = {

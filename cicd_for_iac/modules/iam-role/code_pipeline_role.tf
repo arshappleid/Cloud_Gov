@@ -5,7 +5,7 @@
 #Amazon Web Services, Inc. or Amazon Web Services EMEA SARL or both.
 
 resource "aws_iam_role" "codepipeline_role" {
-  count              = var.create_new_role ? 1 : 0
+
   name               = var.codepipeline_iam_role_name
   tags               = var.tags
   assume_role_policy = <<EOF
@@ -34,7 +34,7 @@ EOF
 
 # TO-DO : replace all * with resource names / arn
 resource "aws_iam_policy" "codepipeline_policy" {
-  count       = var.create_new_role ? 1 : 0
+
   name        = "${var.project_name}-codepipeline-policy"
   description = "Policy to allow codepipeline to execute"
   tags        = var.tags
@@ -122,7 +122,6 @@ EOF
 }
 
 resource "aws_iam_role_policy_attachment" "codepipeline_role_attach" {
-  count      = var.create_new_role ? 1 : 0
-  role       = aws_iam_role.codepipeline_role[0].name
-  policy_arn = aws_iam_policy.codepipeline_policy[0].arn
+  role       = aws_iam_role.codepipeline_role.name
+  policy_arn = aws_iam_policy.codepipeline_policy.arn
 }

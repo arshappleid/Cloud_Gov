@@ -8,10 +8,21 @@ output "arn" {
   value       = aws_s3_bucket.codepipeline_bucket.arn
   description = "The ARN of the S3 Bucket"
 }
-
+output "id" {
+  value       = aws_s3_bucket.codepipeline_bucket.id
+  description = "The ID of the S3 Bucket"
+}
 output "bucket" {
   value       = aws_s3_bucket.codepipeline_bucket.bucket
   description = "The Name of the S3 Bucket"
+}
+output "replication_bucket_id" {
+  value       = aws_s3_bucket.replication_bucket.id
+  description = "Id of the replication bucket"
+}
+output "replication_bucket_arn" {
+  value       = aws_s3_bucket.replication_bucket.arn
+  description = "ARN of the replication bucket"
 }
 
 output "bucket_url" {

@@ -8,14 +8,18 @@ The solution has been optimized for Operational Excellence , Security , Reliabil
 
 ```
 .
-├── docs # All the Documentation files are in this folder
-│ ├── closing_presentation.pptx # Small Presentation with an overview of project
-│ ├── procurement_request # Initial project request , highlighting high-level requirements of the project.
-│ ├── requirements.docx # Final requirements for the project.
+├── docs 									# Project Documentation
+│ ├── closing_presentation.pptx 			# Close off Presentation
+│ ├── procurement_request 					# Initial project request
+│ ├── requirements.docx 					# Project Requirements
 │ └── ...
-├── iam_role # All the code related to setting up authentication. 
-├── infrastructure_As_Code # All the code for different resources in the solution , organized by VPC names.
-├── database.sql # Potential Schema design for an application
+├── cicd_for_iac 							# AWS Codepipeline Config.
+├── iam_role 								# Config for IAM roles 
+├── iac 									# Terraform Config modules
+│	├── aws									# AWS Config Modules
+│	├── azure								# Azure Config Modules
+├── integration_tests						# Integration Testing with GO
+├── database.sql 							# Potential Schema Design
 └── README.md
 
 ```
@@ -89,6 +93,8 @@ PKI keys are provisioned using Terraform Vault , as this gave the oppurtunity to
 
 <img src="./images/cicd_pipeline.png" alt="CICD Pipeline" style="zoom: 65%;" />
 
+Side Note : We will be using Github Repository , with a Code Star Connection instead of Code Commit. Although Rest of the Pipeline stays the same. Also Github Actions will provide additional functionality to perform code checks, and Linting, while the code is being developed. Although only code pipeline will have the ability / AWS Secrets to deploy the architecture.
+
 ## IAM Infrastructure
 
 ### Infrastructure Management Accounts
@@ -118,4 +124,4 @@ PKI keys are provisioned using Terraform Vault , as this gave the oppurtunity to
 
 ### Sources Reffered
 
-1. [AWS Documentation to create a CICD Pipeline for Terraform Code] (https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/create-a-ci-cd-pipeline-to-validate-terraform-configurations-by-using-aws-codepipeline.html)cc
+1. [AWS Documentation to create a CICD Pipeline for Terraform Code] (https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/create-a-ci-cd-pipeline-to-validate-terraform-configurations-by-using-aws-codepipeline.html)

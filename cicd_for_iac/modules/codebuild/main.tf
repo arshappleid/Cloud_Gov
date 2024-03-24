@@ -29,7 +29,6 @@ resource "aws_codebuild_project" "terraform_codebuild_project" {
   }
   source {
     type      = var.build_project_source
-    location  = var.CODE_SRC_URL
     buildspec = "./templates/buildspec_${var.build_projects[count.index]}.yml"
   }
 }

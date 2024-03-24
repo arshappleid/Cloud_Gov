@@ -30,11 +30,6 @@ variable "project_name" {
   description = "Unique name for this project"
   type        = string
 }
-variable "build_project_source" {
-  description = "Information about the SRC Repo : GITHUB , CODECOMMIT"
-  type        = string
-  default     = "GITHUB"
-}
 
 variable "create_new_repo" {
   description = "Whether to create a new repository. Values are true or false. Defaulted to true always."
@@ -106,4 +101,12 @@ variable "builder_image_pull_credentials_type" {
   description = "Image pull credentials type used by codebuild project"
   type        = string
   default     = "CODEBUILD"
+}
+
+variable "secret_access_key_path" {
+  description = "SSM Path for Terraform Access Key"
+}
+
+variable "secret_secret_key_path" {
+  description = "SSM Path for Terraform Secret Key"
 }

@@ -58,11 +58,24 @@ variable "builder_image_pull_credentials_type" {
 }
 
 variable "build_project_source" {
-  description = "Information about the SRC Repo : GITHUB , CODECOMMIT"
+  description = "aws/codebuild/standard:4.0"
   type        = string
+  default     = "CODEPIPELINE"
 }
 
 variable "kms_key_arn" {
   description = "ARN of KMS key for encryption"
   type        = string
 }
+
+variable "codebuild_role_id" {
+  description = "Id of Code Build Role"
+}
+variable "secret_access_key_path" {
+  description = "SSM Path for Terraform Access Key"
+}
+
+variable "secret_secret_key_path" {
+  description = "SSM Path for Terraform Secret Key"
+}
+

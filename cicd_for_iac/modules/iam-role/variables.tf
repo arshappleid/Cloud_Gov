@@ -34,8 +34,18 @@ variable "s3_bucket_arn" {
   type        = string
 }
 
-variable "create_new_role" {
-  type        = bool
-  description = "Flag for deciding if a new role needs to be created"
-  default     = true
+variable "encryption_key_id" {
+  description = "ID of the Encryption key , to attach KMS role"
+}
+
+variable "s3_bucket_id" {
+  description = "ID of the S3 bucket for Code Pipeline"
+}
+
+variable "s3_replication_bucket_id" {
+  description = "ID of the replication bucket"
+}
+
+variable "s3_replication_bucket_arn" {
+  description = "ARN of the replication bucket"
 }

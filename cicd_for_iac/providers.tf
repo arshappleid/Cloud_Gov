@@ -11,3 +11,7 @@ terraform {
 provider "aws" {
   region = "us-east-1"
 }
+provider "aws" {
+  alias  = "replication"
+  region = "us-east-2"
+}
