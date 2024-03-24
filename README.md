@@ -115,3 +115,7 @@ PKI keys are provisioned using Terraform Vault , as this gave the oppurtunity to
 ## Proposed Database Schema Design
 
 <img src="./docs/ER_Diagram.png" alt="Database Schema" style="zoom: 33%;" />
+
+### Sources Reffered
+
+1. [AWS Documentation to create a CICD Pipeline for Terraform Code] (https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/create-a-ci-cd-pipeline-to-validate-terraform-configurations-by-using-aws-codepipeline.html)cc
