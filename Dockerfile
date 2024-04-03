@@ -23,6 +23,10 @@ RUN curl -Lo terraform.zip "https://releases.hashicorp.com/terraform/${TERRAFORM
     chmod +x terragrunt && \
     mv terragrunt /bin && \
     apk add --no-cache "go=$GO_VERSION" && \
-    apk add --no-cache bash
+    apk add --no-cache bash  && \
+    curl -L "$(curl -s https://api.github.com/repos/tenable/terrascan/releases/latest | grep -o -E "https://.+?_Linux_x86_64.tar.gz")" > terrascan.tar.gz && \
+    tar -xf terrascan.tar.gz terrascan && rm terrascan.tar.gz && \
+    install terrascan /usr/local/bin && rm terrascan && \
+    terrascan
     # Set a default command
 CMD ["tail", "-f", "/dev/null"]

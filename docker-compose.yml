@@ -14,3 +14,4 @@ services:
             - ./cicd_for_iac/:/cloud_gov/cicd_for_iac/
             - ./iam_roles/:/cloud_gov/iam_roles/
             - ./scripts/:/cloud_gov/scripts/
+            - ./terrascan_logs/:/terrascan_logs/

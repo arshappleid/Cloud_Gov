@@ -1,0 +1,1725 @@
+2024-04-03T02:27:17.009Z	[33mwarn[0m	commons/load-dir.go:170	failed to build unified config. errors:
+/cloud_gov/cicd_for_iac/modules/codebuild/variables.tf:10,21-79: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+/cloud_gov/cicd_for_iac/modules/codepipeline/variables.tf:10,21-79: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+/cloud_gov/cicd_for_iac/modules/codepipeline/variables.tf:24,21-98: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+
+2024-04-03T02:27:17.012Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024/04/03 02:27:17 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/aws/versions
+2024-04-03T02:27:17.189Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.189Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.189Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.189Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.189Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.189Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.194Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.194Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.194Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.195Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.195Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.195Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.195Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.196Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.196Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.196Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.197Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.197Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.197Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.197Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.198Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.198Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.198Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.198Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.199Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.199Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.199Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.199Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.200Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.200Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.200Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.200Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.201Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.201Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.201Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.201Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.202Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.202Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.202Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.202Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.203Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.203Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.203Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.203Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.204Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.204Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.204Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.205Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.205Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.205Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:17.205Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+
+
+Scan Errors -
+
+	IaC Type            :	docker
+	Directory           :	/cloud_gov
+	Error Message       :	Dockerfile not found in the directory /cloud_gov
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac
+	Error Message       :	diagnostic errors while loading terraform config dir '/cloud_gov/cicd_for_iac'. error from terraform:
+/cloud_gov/cicd_for_iac/variables.tf:10,21-79: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+/cloud_gov/cicd_for_iac/variables.tf:25,21-98: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac/modules/codebuild
+	Error Message       :	diagnostic errors while loading terraform config dir '/cloud_gov/cicd_for_iac/modules/codebuild'. error from terraform:
+/cloud_gov/cicd_for_iac/modules/codebuild/variables.tf:10,21-79: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac/modules/codepipeline
+	Error Message       :	diagnostic errors while loading terraform config dir '/cloud_gov/cicd_for_iac/modules/codepipeline'. error from terraform:
+/cloud_gov/cicd_for_iac/modules/codepipeline/variables.tf:10,21-79: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+/cloud_gov/cicd_for_iac/modules/codepipeline/variables.tf:24,21-98: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov
+	Error Message       :	directory '/cloud_gov' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac/examples
+	Error Message       :	directory '/cloud_gov/cicd_for_iac/examples' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac/modules
+	Error Message       :	directory '/cloud_gov/cicd_for_iac/modules' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac/templates
+	Error Message       :	directory '/cloud_gov/cicd_for_iac/templates' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac/templates/scripts
+	Error Message       :	directory '/cloud_gov/cicd_for_iac/templates/scripts' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/iac/active_directory_vpc
+	Error Message       :	directory '/cloud_gov/iac/active_directory_vpc' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/iac/backend_vpc
+	Error Message       :	directory '/cloud_gov/iac/backend_vpc' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/iac/ssm_parameters/policies
+	Error Message       :	directory '/cloud_gov/iac/ssm_parameters/policies' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	directory '/cloud_gov/iam_roles/service_based_policies' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/scripts
+	Error Message       :	directory '/cloud_gov/scripts' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/cicd_for_iac/.terraform/modules
+	Error Message       :	error while loading iac file '/cloud_gov/cicd_for_iac/.terraform/modules/modules.json', err: failed to find valid Resources key in file: /cloud_gov/cicd_for_iac/.terraform/modules/modules.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/cicd_for_iac/templates
+	Error Message       :	error while loading iac file '/cloud_gov/cicd_for_iac/templates/buildspec_apply.yml', err: failed to find valid Resources key in file: /cloud_gov/cicd_for_iac/templates/buildspec_apply.yml
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/cicd_for_iac/templates
+	Error Message       :	error while loading iac file '/cloud_gov/cicd_for_iac/templates/buildspec_destroy.yml', err: error while unmarshalling yaml, error yaml: line 6: did not find expected key
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	k8s
+	Directory           :	/cloud_gov/cicd_for_iac/templates
+	Error Message       :	error while loading iac file '/cloud_gov/cicd_for_iac/templates/buildspec_destroy.yml'. err: yaml: line 6: did not find expected key
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/cicd_for_iac/templates
+	Error Message       :	error while loading iac file '/cloud_gov/cicd_for_iac/templates/buildspec_plan.yml', err: failed to find valid Resources key in file: /cloud_gov/cicd_for_iac/templates/buildspec_plan.yml
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/cicd_for_iac/templates
+	Error Message       :	error while loading iac file '/cloud_gov/cicd_for_iac/templates/buildspec_validate.yml', err: failed to find valid Resources key in file: /cloud_gov/cicd_for_iac/templates/buildspec_validate.yml
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iac/frontend_vpc/.terraform/modules
+	Error Message       :	error while loading iac file '/cloud_gov/iac/frontend_vpc/.terraform/modules/modules.json', err: failed to find valid Resources key in file: /cloud_gov/iac/frontend_vpc/.terraform/modules/modules.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	k8s
+	Directory           :	/cloud_gov/iac/frontend_vpc/.terraform/modules
+	Error Message       :	error while loading iac file '/cloud_gov/iac/frontend_vpc/.terraform/modules/modules.json'. err: bufio.Scanner: token too long
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iac/security_vpc/.terraform/modules
+	Error Message       :	error while loading iac file '/cloud_gov/iac/security_vpc/.terraform/modules/modules.json', err: failed to find valid Resources key in file: /cloud_gov/iac/security_vpc/.terraform/modules/modules.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iac/ssm_parameters/policies
+	Error Message       :	error while loading iac file '/cloud_gov/iac/ssm_parameters/policies/key_admin_policy.json', err: failed to find valid Resources key in file: /cloud_gov/iac/ssm_parameters/policies/key_admin_policy.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iac/ssm_parameters/policies
+	Error Message       :	error while loading iac file '/cloud_gov/iac/ssm_parameters/policies/key_usage_policy.json', err: failed to find valid Resources key in file: /cloud_gov/iac/ssm_parameters/policies/key_usage_policy.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/IT_team.json', err: failed to find valid Resources key in file: /cloud_gov/iam_roles/service_based_policies/IT_team.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/data_analysis_team.json', err: error while resolving intrinsic functions, error invalid JSON: unexpected end of JSON input
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	arm
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/data_analysis_team.json'. err: unable to parse file /cloud_gov/iam_roles/service_based_policies/data_analysis_team.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/development_team.json', err: error while resolving intrinsic functions, error invalid JSON: unexpected end of JSON input
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	arm
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/development_team.json'. err: unable to parse file /cloud_gov/iam_roles/service_based_policies/development_team.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/marketing_team.json', err: error while resolving intrinsic functions, error invalid JSON: invalid character '/' after object key:value pair
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	arm
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/marketing_team.json'. err: unable to parse file /cloud_gov/iam_roles/service_based_policies/marketing_team.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/tier1_upper_Management.json', err: failed to find valid Resources key in file: /cloud_gov/iam_roles/service_based_policies/tier1_upper_Management.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/tier2_team_Managers.json', err: failed to find valid Resources key in file: /cloud_gov/iam_roles/service_based_policies/tier2_team_Managers.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/tier3_team_Members.json', err: failed to find valid Resources key in file: /cloud_gov/iam_roles/service_based_policies/tier3_team_Members.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac
+	Error Message       :	failed to build unified config. errors:
+/cloud_gov/cicd_for_iac/modules/codebuild/variables.tf:10,21-79: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+/cloud_gov/cicd_for_iac/modules/codepipeline/variables.tf:10,21-79: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+/cloud_gov/cicd_for_iac/modules/codepipeline/variables.tf:24,21-98: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	kustomize
+	Directory           :	/cloud_gov
+	Error Message       :	kustomization.y(a)ml file not found in the directory /cloud_gov
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	helm
+	Directory           :	/cloud_gov
+	Error Message       :	no helm charts found in directory /cloud_gov
+	
+	-----------------------------------------------------------------------
+	
+
+
+Violation Details -
+    
+	Description    :	Ensure Unknown Port is not exposed to the entire internet
+	File           :	iac/frontend_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	12
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure Unknown Port is not exposed to the entire internet
+	File           :	iac/security_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc
+	Line           :	12
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure rotation for customer created CMKs is enabled
+	File           :	iac/ssm_parameters/kms_key.tf
+	Module Name    :	root
+	Plan Root      :	iac/ssm_parameters
+	Line           :	1
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that your AWS application is not deployed within the default Virtual Private Cloud in order to follow security best practices
+	File           :	iac/security_vpc/firewall_ec2/ec2.tf
+	Module Name    :	firewall_ec2
+	Plan Root      :	iac/security_vpc
+	Line           :	1
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that your AWS application is not deployed within the default Virtual Private Cloud in order to follow security best practices
+	File           :	iac/security_vpc/firewall_ec2/ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc/firewall_ec2
+	Line           :	1
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that your AWS application is not deployed within the default Virtual Private Cloud in order to follow security best practices
+	File           :	iac/frontend_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	43
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that your AWS application is not deployed within the default Virtual Private Cloud in order to follow security best practices
+	File           :	iac/security_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc
+	Line           :	59
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Enabling S3 versioning will enable easy recovery from both unintended user actions, like deletes and overwrites
+	File           :	iac/tgw/tgw_flowLogs.tf
+	Module Name    :	root
+	Plan Root      :	iac/tgw
+	Line           :	2
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure Target Group use HTTPs to ensure end to end encryption
+	File           :	iac/frontend_vpc/alb_target_group/alb_target_group.tf
+	Module Name    :	target_group_east1a
+	Plan Root      :	iac/frontend_vpc
+	Line           :	1
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure Target Group use HTTPs to ensure end to end encryption
+	File           :	iac/frontend_vpc/alb_target_group/alb_target_group.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc/alb_target_group
+	Line           :	1
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Launch configuration uses IMDSv1 which vulnerable to SSRF
+	File           :	iac/frontend_vpc/alb_target_group/autoScaling_group_config.tf
+	Module Name    :	target_group_east1a
+	Plan Root      :	iac/frontend_vpc
+	Line           :	1
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure there is a listener configured on HTTPs or with a port 443
+	File           :	iac/frontend_vpc/alb.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	12
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	EC2 instances should disable IMDS or require IMDSv2 as this can be related to the weaponization phase of kill chain
+	File           :	iac/security_vpc/firewall_ec2/ec2.tf
+	Module Name    :	firewall_ec2
+	Plan Root      :	iac/security_vpc
+	Line           :	1
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	EC2 instances should disable IMDS or require IMDSv2 as this can be related to the weaponization phase of kill chain
+	File           :	iac/security_vpc/firewall_ec2/ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc/firewall_ec2
+	Line           :	1
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	EC2 instances should disable IMDS or require IMDSv2 as this can be related to the weaponization phase of kill chain
+	File           :	iac/frontend_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	43
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	EC2 instances should disable IMDS or require IMDSv2 as this can be related to the weaponization phase of kill chain
+	File           :	iac/security_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc
+	Line           :	59
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure VPC flow logging is enabled in all VPCs
+	File           :	iac/frontend_vpc/vpc.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	1
+	Severity       :	LOW
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure VPC flow logging is enabled in all VPCs
+	File           :	iac/security_vpc/vpc.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc
+	Line           :	1
+	Severity       :	LOW
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Security Groups - Unrestricted Specific Ports - (SSH,22)
+	File           :	iac/frontend_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	12
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Security Groups - Unrestricted Specific Ports - (SSH,22)
+	File           :	iac/security_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc
+	Line           :	12
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure Security Groups Unrestricted Specific Ports SSH (TCP,22) is not exposed to private hosts more than 32
+	File           :	iac/frontend_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	12
+	Severity       :	LOW
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure Security Groups Unrestricted Specific Ports SSH (TCP,22) is not exposed to private hosts more than 32
+	File           :	iac/security_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc
+	Line           :	12
+	Severity       :	LOW
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that detailed monitoring is enabled for EC2 instances.
+	File           :	iac/security_vpc/firewall_ec2/ec2.tf
+	Module Name    :	firewall_ec2
+	Plan Root      :	iac/security_vpc
+	Line           :	1
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that detailed monitoring is enabled for EC2 instances.
+	File           :	iac/security_vpc/firewall_ec2/ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc/firewall_ec2
+	Line           :	1
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that detailed monitoring is enabled for EC2 instances.
+	File           :	iac/frontend_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	43
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that detailed monitoring is enabled for EC2 instances.
+	File           :	iac/security_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc
+	Line           :	59
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+
+Scan Summary -
+
+	File/Folder         :	/cloud_gov
+	IaC Type            :	terraform
+	Scanned At          :	2024-04-03 02:27:19.05686405 +0000 UTC
+	Policies Validated  :	177
+	Violated Policies   :	26
+	Low                 :	4
+	Medium              :	11
+	High                :	11
+	
+
+2024-04-03T02:27:19.318Z	[33mwarn[0m	commons/load-dir.go:170	failed to build unified config. errors:
+/cloud_gov/cicd_for_iac/modules/codebuild/variables.tf:10,21-79: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+/cloud_gov/cicd_for_iac/modules/codepipeline/variables.tf:10,21-79: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+/cloud_gov/cicd_for_iac/modules/codepipeline/variables.tf:24,21-98: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+
+2024-04-03T02:27:19.321Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024/04/03 02:27:19 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/aws/versions
+2024-04-03T02:27:19.503Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.503Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.503Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.503Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.503Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.503Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.507Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.507Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.507Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.507Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.508Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.508Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.508Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.508Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.508Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.509Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.509Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.509Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.509Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.509Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.510Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.510Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.510Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.510Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.510Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.511Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.511Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.511Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.511Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.511Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.512Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.512Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.512Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.512Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.512Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.512Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.513Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.513Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.513Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.513Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.513Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.514Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.514Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.514Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.514Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.514Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.514Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.515Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.515Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.515Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:19.515Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+
+
+Scan Errors -
+
+	IaC Type            :	docker
+	Directory           :	/cloud_gov
+	Error Message       :	Dockerfile not found in the directory /cloud_gov
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac
+	Error Message       :	diagnostic errors while loading terraform config dir '/cloud_gov/cicd_for_iac'. error from terraform:
+/cloud_gov/cicd_for_iac/variables.tf:10,21-79: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+/cloud_gov/cicd_for_iac/variables.tf:25,21-98: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac/modules/codebuild
+	Error Message       :	diagnostic errors while loading terraform config dir '/cloud_gov/cicd_for_iac/modules/codebuild'. error from terraform:
+/cloud_gov/cicd_for_iac/modules/codebuild/variables.tf:10,21-79: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac/modules/codepipeline
+	Error Message       :	diagnostic errors while loading terraform config dir '/cloud_gov/cicd_for_iac/modules/codepipeline'. error from terraform:
+/cloud_gov/cicd_for_iac/modules/codepipeline/variables.tf:10,21-79: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+/cloud_gov/cicd_for_iac/modules/codepipeline/variables.tf:24,21-98: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov
+	Error Message       :	directory '/cloud_gov' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac/examples
+	Error Message       :	directory '/cloud_gov/cicd_for_iac/examples' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac/modules
+	Error Message       :	directory '/cloud_gov/cicd_for_iac/modules' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac/templates
+	Error Message       :	directory '/cloud_gov/cicd_for_iac/templates' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac/templates/scripts
+	Error Message       :	directory '/cloud_gov/cicd_for_iac/templates/scripts' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/iac/active_directory_vpc
+	Error Message       :	directory '/cloud_gov/iac/active_directory_vpc' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/iac/backend_vpc
+	Error Message       :	directory '/cloud_gov/iac/backend_vpc' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/iac/ssm_parameters/policies
+	Error Message       :	directory '/cloud_gov/iac/ssm_parameters/policies' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	directory '/cloud_gov/iam_roles/service_based_policies' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/scripts
+	Error Message       :	directory '/cloud_gov/scripts' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/cicd_for_iac/.terraform/modules
+	Error Message       :	error while loading iac file '/cloud_gov/cicd_for_iac/.terraform/modules/modules.json', err: failed to find valid Resources key in file: /cloud_gov/cicd_for_iac/.terraform/modules/modules.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/cicd_for_iac/templates
+	Error Message       :	error while loading iac file '/cloud_gov/cicd_for_iac/templates/buildspec_apply.yml', err: failed to find valid Resources key in file: /cloud_gov/cicd_for_iac/templates/buildspec_apply.yml
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/cicd_for_iac/templates
+	Error Message       :	error while loading iac file '/cloud_gov/cicd_for_iac/templates/buildspec_destroy.yml', err: error while unmarshalling yaml, error yaml: line 6: did not find expected key
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	k8s
+	Directory           :	/cloud_gov/cicd_for_iac/templates
+	Error Message       :	error while loading iac file '/cloud_gov/cicd_for_iac/templates/buildspec_destroy.yml'. err: yaml: line 6: did not find expected key
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/cicd_for_iac/templates
+	Error Message       :	error while loading iac file '/cloud_gov/cicd_for_iac/templates/buildspec_plan.yml', err: failed to find valid Resources key in file: /cloud_gov/cicd_for_iac/templates/buildspec_plan.yml
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/cicd_for_iac/templates
+	Error Message       :	error while loading iac file '/cloud_gov/cicd_for_iac/templates/buildspec_validate.yml', err: failed to find valid Resources key in file: /cloud_gov/cicd_for_iac/templates/buildspec_validate.yml
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iac/frontend_vpc/.terraform/modules
+	Error Message       :	error while loading iac file '/cloud_gov/iac/frontend_vpc/.terraform/modules/modules.json', err: failed to find valid Resources key in file: /cloud_gov/iac/frontend_vpc/.terraform/modules/modules.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	k8s
+	Directory           :	/cloud_gov/iac/frontend_vpc/.terraform/modules
+	Error Message       :	error while loading iac file '/cloud_gov/iac/frontend_vpc/.terraform/modules/modules.json'. err: bufio.Scanner: token too long
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iac/security_vpc/.terraform/modules
+	Error Message       :	error while loading iac file '/cloud_gov/iac/security_vpc/.terraform/modules/modules.json', err: failed to find valid Resources key in file: /cloud_gov/iac/security_vpc/.terraform/modules/modules.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iac/ssm_parameters/policies
+	Error Message       :	error while loading iac file '/cloud_gov/iac/ssm_parameters/policies/key_admin_policy.json', err: failed to find valid Resources key in file: /cloud_gov/iac/ssm_parameters/policies/key_admin_policy.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iac/ssm_parameters/policies
+	Error Message       :	error while loading iac file '/cloud_gov/iac/ssm_parameters/policies/key_usage_policy.json', err: failed to find valid Resources key in file: /cloud_gov/iac/ssm_parameters/policies/key_usage_policy.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/IT_team.json', err: failed to find valid Resources key in file: /cloud_gov/iam_roles/service_based_policies/IT_team.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/data_analysis_team.json', err: error while resolving intrinsic functions, error invalid JSON: unexpected end of JSON input
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	arm
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/data_analysis_team.json'. err: unable to parse file /cloud_gov/iam_roles/service_based_policies/data_analysis_team.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/development_team.json', err: error while resolving intrinsic functions, error invalid JSON: unexpected end of JSON input
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	arm
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/development_team.json'. err: unable to parse file /cloud_gov/iam_roles/service_based_policies/development_team.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/marketing_team.json', err: error while resolving intrinsic functions, error invalid JSON: invalid character '/' after object key:value pair
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	arm
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/marketing_team.json'. err: unable to parse file /cloud_gov/iam_roles/service_based_policies/marketing_team.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/tier1_upper_Management.json', err: failed to find valid Resources key in file: /cloud_gov/iam_roles/service_based_policies/tier1_upper_Management.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/tier2_team_Managers.json', err: failed to find valid Resources key in file: /cloud_gov/iam_roles/service_based_policies/tier2_team_Managers.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/tier3_team_Members.json', err: failed to find valid Resources key in file: /cloud_gov/iam_roles/service_based_policies/tier3_team_Members.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac
+	Error Message       :	failed to build unified config. errors:
+/cloud_gov/cicd_for_iac/modules/codebuild/variables.tf:10,21-79: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+/cloud_gov/cicd_for_iac/modules/codepipeline/variables.tf:10,21-79: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+/cloud_gov/cicd_for_iac/modules/codepipeline/variables.tf:24,21-98: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	kustomize
+	Directory           :	/cloud_gov
+	Error Message       :	kustomization.y(a)ml file not found in the directory /cloud_gov
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	helm
+	Directory           :	/cloud_gov
+	Error Message       :	no helm charts found in directory /cloud_gov
+	
+	-----------------------------------------------------------------------
+	
+
+
+Violation Details -
+    
+	Description    :	Ensure Target Group use HTTPs to ensure end to end encryption
+	File           :	iac/frontend_vpc/alb_target_group/alb_target_group.tf
+	Module Name    :	target_group_east1b
+	Plan Root      :	iac/frontend_vpc
+	Line           :	1
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure Target Group use HTTPs to ensure end to end encryption
+	File           :	iac/frontend_vpc/alb_target_group/alb_target_group.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc/alb_target_group
+	Line           :	1
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Enabling S3 versioning will enable easy recovery from both unintended user actions, like deletes and overwrites
+	File           :	iac/tgw/tgw_flowLogs.tf
+	Module Name    :	root
+	Plan Root      :	iac/tgw
+	Line           :	2
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure Security Groups Unrestricted Specific Ports SSH (TCP,22) is not exposed to private hosts more than 32
+	File           :	iac/frontend_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	12
+	Severity       :	LOW
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure Security Groups Unrestricted Specific Ports SSH (TCP,22) is not exposed to private hosts more than 32
+	File           :	iac/security_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc
+	Line           :	12
+	Severity       :	LOW
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	EC2 instances should disable IMDS or require IMDSv2 as this can be related to the weaponization phase of kill chain
+	File           :	iac/security_vpc/firewall_ec2/ec2.tf
+	Module Name    :	firewall_ec2
+	Plan Root      :	iac/security_vpc
+	Line           :	1
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	EC2 instances should disable IMDS or require IMDSv2 as this can be related to the weaponization phase of kill chain
+	File           :	iac/security_vpc/firewall_ec2/ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc/firewall_ec2
+	Line           :	1
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	EC2 instances should disable IMDS or require IMDSv2 as this can be related to the weaponization phase of kill chain
+	File           :	iac/frontend_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	43
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	EC2 instances should disable IMDS or require IMDSv2 as this can be related to the weaponization phase of kill chain
+	File           :	iac/security_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc
+	Line           :	59
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that detailed monitoring is enabled for EC2 instances.
+	File           :	iac/security_vpc/firewall_ec2/ec2.tf
+	Module Name    :	firewall_ec2
+	Plan Root      :	iac/security_vpc
+	Line           :	1
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that detailed monitoring is enabled for EC2 instances.
+	File           :	iac/security_vpc/firewall_ec2/ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc/firewall_ec2
+	Line           :	1
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that detailed monitoring is enabled for EC2 instances.
+	File           :	iac/frontend_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	43
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that detailed monitoring is enabled for EC2 instances.
+	File           :	iac/security_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc
+	Line           :	59
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Launch configuration uses IMDSv1 which vulnerable to SSRF
+	File           :	iac/frontend_vpc/alb_target_group/autoScaling_group_config.tf
+	Module Name    :	target_group_east1b
+	Plan Root      :	iac/frontend_vpc
+	Line           :	1
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Security Groups - Unrestricted Specific Ports - (SSH,22)
+	File           :	iac/frontend_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	12
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Security Groups - Unrestricted Specific Ports - (SSH,22)
+	File           :	iac/security_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc
+	Line           :	12
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure there is a listener configured on HTTPs or with a port 443
+	File           :	iac/frontend_vpc/alb.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	12
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure VPC flow logging is enabled in all VPCs
+	File           :	iac/frontend_vpc/vpc.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	1
+	Severity       :	LOW
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure VPC flow logging is enabled in all VPCs
+	File           :	iac/security_vpc/vpc.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc
+	Line           :	1
+	Severity       :	LOW
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure rotation for customer created CMKs is enabled
+	File           :	iac/ssm_parameters/kms_key.tf
+	Module Name    :	root
+	Plan Root      :	iac/ssm_parameters
+	Line           :	1
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that your AWS application is not deployed within the default Virtual Private Cloud in order to follow security best practices
+	File           :	iac/security_vpc/firewall_ec2/ec2.tf
+	Module Name    :	firewall_ec2
+	Plan Root      :	iac/security_vpc
+	Line           :	1
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that your AWS application is not deployed within the default Virtual Private Cloud in order to follow security best practices
+	File           :	iac/security_vpc/firewall_ec2/ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc/firewall_ec2
+	Line           :	1
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that your AWS application is not deployed within the default Virtual Private Cloud in order to follow security best practices
+	File           :	iac/frontend_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	43
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that your AWS application is not deployed within the default Virtual Private Cloud in order to follow security best practices
+	File           :	iac/security_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc
+	Line           :	59
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure Unknown Port is not exposed to the entire internet
+	File           :	iac/frontend_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	12
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure Unknown Port is not exposed to the entire internet
+	File           :	iac/security_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc
+	Line           :	12
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+
+Scan Summary -
+
+	File/Folder         :	/cloud_gov
+	IaC Type            :	terraform
+	Scanned At          :	2024-04-03 02:27:21.45876301 +0000 UTC
+	Policies Validated  :	177
+	Violated Policies   :	26
+	Low                 :	4
+	Medium              :	11
+	High                :	11
+	
+
+2024-04-03T02:27:21.712Z	[33mwarn[0m	commons/load-dir.go:170	failed to build unified config. errors:
+/cloud_gov/cicd_for_iac/modules/codebuild/variables.tf:10,21-79: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+/cloud_gov/cicd_for_iac/modules/codepipeline/variables.tf:10,21-79: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+/cloud_gov/cicd_for_iac/modules/codepipeline/variables.tf:24,21-98: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+
+2024-04-03T02:27:21.715Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024/04/03 02:27:21 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/aws/versions
+2024-04-03T02:27:21.906Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.906Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.906Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.906Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.906Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.906Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.911Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.911Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.911Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.911Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.912Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.912Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.912Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.912Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.913Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.913Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.913Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.913Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.914Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.914Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.914Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.914Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.915Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.915Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.915Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.915Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.916Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.916Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.916Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.916Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.917Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.917Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.917Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.917Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.918Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.918Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.918Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.918Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.919Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.919Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.919Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.919Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.920Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.920Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.920Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.920Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.920Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.921Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.921Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.921Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+2024-04-03T02:27:21.921Z	[33mwarn[0m	commons/terraform-provider.go:161	failed to parse provider version: can't use constraint operator "~>"; an exact version is required
+
+
+Scan Errors -
+
+	IaC Type            :	docker
+	Directory           :	/cloud_gov
+	Error Message       :	Dockerfile not found in the directory /cloud_gov
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac
+	Error Message       :	diagnostic errors while loading terraform config dir '/cloud_gov/cicd_for_iac'. error from terraform:
+/cloud_gov/cicd_for_iac/variables.tf:10,21-79: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+/cloud_gov/cicd_for_iac/variables.tf:25,21-98: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac/modules/codebuild
+	Error Message       :	diagnostic errors while loading terraform config dir '/cloud_gov/cicd_for_iac/modules/codebuild'. error from terraform:
+/cloud_gov/cicd_for_iac/modules/codebuild/variables.tf:10,21-79: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac/modules/codepipeline
+	Error Message       :	diagnostic errors while loading terraform config dir '/cloud_gov/cicd_for_iac/modules/codepipeline'. error from terraform:
+/cloud_gov/cicd_for_iac/modules/codepipeline/variables.tf:10,21-79: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+/cloud_gov/cicd_for_iac/modules/codepipeline/variables.tf:24,21-98: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov
+	Error Message       :	directory '/cloud_gov' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac/examples
+	Error Message       :	directory '/cloud_gov/cicd_for_iac/examples' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac/modules
+	Error Message       :	directory '/cloud_gov/cicd_for_iac/modules' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac/templates
+	Error Message       :	directory '/cloud_gov/cicd_for_iac/templates' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac/templates/scripts
+	Error Message       :	directory '/cloud_gov/cicd_for_iac/templates/scripts' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/iac/active_directory_vpc
+	Error Message       :	directory '/cloud_gov/iac/active_directory_vpc' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/iac/backend_vpc
+	Error Message       :	directory '/cloud_gov/iac/backend_vpc' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/iac/ssm_parameters/policies
+	Error Message       :	directory '/cloud_gov/iac/ssm_parameters/policies' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	directory '/cloud_gov/iam_roles/service_based_policies' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/scripts
+	Error Message       :	directory '/cloud_gov/scripts' has no terraform config files
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/cicd_for_iac/.terraform/modules
+	Error Message       :	error while loading iac file '/cloud_gov/cicd_for_iac/.terraform/modules/modules.json', err: failed to find valid Resources key in file: /cloud_gov/cicd_for_iac/.terraform/modules/modules.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/cicd_for_iac/templates
+	Error Message       :	error while loading iac file '/cloud_gov/cicd_for_iac/templates/buildspec_apply.yml', err: failed to find valid Resources key in file: /cloud_gov/cicd_for_iac/templates/buildspec_apply.yml
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/cicd_for_iac/templates
+	Error Message       :	error while loading iac file '/cloud_gov/cicd_for_iac/templates/buildspec_destroy.yml', err: error while unmarshalling yaml, error yaml: line 6: did not find expected key
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	k8s
+	Directory           :	/cloud_gov/cicd_for_iac/templates
+	Error Message       :	error while loading iac file '/cloud_gov/cicd_for_iac/templates/buildspec_destroy.yml'. err: yaml: line 6: did not find expected key
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/cicd_for_iac/templates
+	Error Message       :	error while loading iac file '/cloud_gov/cicd_for_iac/templates/buildspec_plan.yml', err: failed to find valid Resources key in file: /cloud_gov/cicd_for_iac/templates/buildspec_plan.yml
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/cicd_for_iac/templates
+	Error Message       :	error while loading iac file '/cloud_gov/cicd_for_iac/templates/buildspec_validate.yml', err: failed to find valid Resources key in file: /cloud_gov/cicd_for_iac/templates/buildspec_validate.yml
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iac/frontend_vpc/.terraform/modules
+	Error Message       :	error while loading iac file '/cloud_gov/iac/frontend_vpc/.terraform/modules/modules.json', err: failed to find valid Resources key in file: /cloud_gov/iac/frontend_vpc/.terraform/modules/modules.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	k8s
+	Directory           :	/cloud_gov/iac/frontend_vpc/.terraform/modules
+	Error Message       :	error while loading iac file '/cloud_gov/iac/frontend_vpc/.terraform/modules/modules.json'. err: bufio.Scanner: token too long
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iac/security_vpc/.terraform/modules
+	Error Message       :	error while loading iac file '/cloud_gov/iac/security_vpc/.terraform/modules/modules.json', err: failed to find valid Resources key in file: /cloud_gov/iac/security_vpc/.terraform/modules/modules.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iac/ssm_parameters/policies
+	Error Message       :	error while loading iac file '/cloud_gov/iac/ssm_parameters/policies/key_admin_policy.json', err: failed to find valid Resources key in file: /cloud_gov/iac/ssm_parameters/policies/key_admin_policy.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iac/ssm_parameters/policies
+	Error Message       :	error while loading iac file '/cloud_gov/iac/ssm_parameters/policies/key_usage_policy.json', err: failed to find valid Resources key in file: /cloud_gov/iac/ssm_parameters/policies/key_usage_policy.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/IT_team.json', err: failed to find valid Resources key in file: /cloud_gov/iam_roles/service_based_policies/IT_team.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/data_analysis_team.json', err: error while resolving intrinsic functions, error invalid JSON: unexpected end of JSON input
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	arm
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/data_analysis_team.json'. err: unable to parse file /cloud_gov/iam_roles/service_based_policies/data_analysis_team.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/development_team.json', err: error while resolving intrinsic functions, error invalid JSON: unexpected end of JSON input
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	arm
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/development_team.json'. err: unable to parse file /cloud_gov/iam_roles/service_based_policies/development_team.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/marketing_team.json', err: error while resolving intrinsic functions, error invalid JSON: invalid character '/' after object key:value pair
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	arm
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/marketing_team.json'. err: unable to parse file /cloud_gov/iam_roles/service_based_policies/marketing_team.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/tier1_upper_Management.json', err: failed to find valid Resources key in file: /cloud_gov/iam_roles/service_based_policies/tier1_upper_Management.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/tier2_team_Managers.json', err: failed to find valid Resources key in file: /cloud_gov/iam_roles/service_based_policies/tier2_team_Managers.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	cft
+	Directory           :	/cloud_gov/iam_roles/service_based_policies
+	Error Message       :	error while loading iac file '/cloud_gov/iam_roles/service_based_policies/tier3_team_Members.json', err: failed to find valid Resources key in file: /cloud_gov/iam_roles/service_based_policies/tier3_team_Members.json
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	terraform
+	Directory           :	/cloud_gov/cicd_for_iac
+	Error Message       :	failed to build unified config. errors:
+/cloud_gov/cicd_for_iac/modules/codebuild/variables.tf:10,21-79: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+/cloud_gov/cicd_for_iac/modules/codepipeline/variables.tf:10,21-79: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+/cloud_gov/cicd_for_iac/modules/codepipeline/variables.tf:24,21-98: Invalid validation error message; The validation error message must be at least one full sentence starting with an uppercase letter and ending with a period or question mark.
+
+Your given message will be included as part of a larger Terraform error message, written as English prose. For broadly-shared modules we suggest using a similar writing style so that the overall result will be consistent.
+
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	kustomize
+	Directory           :	/cloud_gov
+	Error Message       :	kustomization.y(a)ml file not found in the directory /cloud_gov
+	
+	-----------------------------------------------------------------------
+	
+	IaC Type            :	helm
+	Directory           :	/cloud_gov
+	Error Message       :	no helm charts found in directory /cloud_gov
+	
+	-----------------------------------------------------------------------
+	
+
+
+Violation Details -
+    
+	Description    :	Security Groups - Unrestricted Specific Ports - (SSH,22)
+	File           :	iac/frontend_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	12
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Security Groups - Unrestricted Specific Ports - (SSH,22)
+	File           :	iac/security_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc
+	Line           :	12
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure Target Group use HTTPs to ensure end to end encryption
+	File           :	iac/frontend_vpc/alb_target_group/alb_target_group.tf
+	Module Name    :	target_group_east1a
+	Plan Root      :	iac/frontend_vpc
+	Line           :	1
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure Target Group use HTTPs to ensure end to end encryption
+	File           :	iac/frontend_vpc/alb_target_group/alb_target_group.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc/alb_target_group
+	Line           :	1
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that detailed monitoring is enabled for EC2 instances.
+	File           :	iac/security_vpc/firewall_ec2/ec2.tf
+	Module Name    :	firewall_ec2
+	Plan Root      :	iac/security_vpc
+	Line           :	1
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that detailed monitoring is enabled for EC2 instances.
+	File           :	iac/security_vpc/firewall_ec2/ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc/firewall_ec2
+	Line           :	1
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that detailed monitoring is enabled for EC2 instances.
+	File           :	iac/frontend_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	43
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that detailed monitoring is enabled for EC2 instances.
+	File           :	iac/security_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc
+	Line           :	59
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure rotation for customer created CMKs is enabled
+	File           :	iac/ssm_parameters/kms_key.tf
+	Module Name    :	root
+	Plan Root      :	iac/ssm_parameters
+	Line           :	1
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure VPC flow logging is enabled in all VPCs
+	File           :	iac/frontend_vpc/vpc.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	1
+	Severity       :	LOW
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure VPC flow logging is enabled in all VPCs
+	File           :	iac/security_vpc/vpc.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc
+	Line           :	1
+	Severity       :	LOW
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	EC2 instances should disable IMDS or require IMDSv2 as this can be related to the weaponization phase of kill chain
+	File           :	iac/security_vpc/firewall_ec2/ec2.tf
+	Module Name    :	firewall_ec2
+	Plan Root      :	iac/security_vpc
+	Line           :	1
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	EC2 instances should disable IMDS or require IMDSv2 as this can be related to the weaponization phase of kill chain
+	File           :	iac/security_vpc/firewall_ec2/ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc/firewall_ec2
+	Line           :	1
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	EC2 instances should disable IMDS or require IMDSv2 as this can be related to the weaponization phase of kill chain
+	File           :	iac/frontend_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	43
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	EC2 instances should disable IMDS or require IMDSv2 as this can be related to the weaponization phase of kill chain
+	File           :	iac/security_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc
+	Line           :	59
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure Unknown Port is not exposed to the entire internet
+	File           :	iac/frontend_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	12
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure Unknown Port is not exposed to the entire internet
+	File           :	iac/security_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc
+	Line           :	12
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure there is a listener configured on HTTPs or with a port 443
+	File           :	iac/frontend_vpc/alb.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	12
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Launch configuration uses IMDSv1 which vulnerable to SSRF
+	File           :	iac/frontend_vpc/alb_target_group/autoScaling_group_config.tf
+	Module Name    :	target_group_east1a
+	Plan Root      :	iac/frontend_vpc
+	Line           :	1
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that your AWS application is not deployed within the default Virtual Private Cloud in order to follow security best practices
+	File           :	iac/security_vpc/firewall_ec2/ec2.tf
+	Module Name    :	firewall_ec2
+	Plan Root      :	iac/security_vpc
+	Line           :	1
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that your AWS application is not deployed within the default Virtual Private Cloud in order to follow security best practices
+	File           :	iac/security_vpc/firewall_ec2/ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc/firewall_ec2
+	Line           :	1
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that your AWS application is not deployed within the default Virtual Private Cloud in order to follow security best practices
+	File           :	iac/frontend_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	43
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure that your AWS application is not deployed within the default Virtual Private Cloud in order to follow security best practices
+	File           :	iac/security_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc
+	Line           :	59
+	Severity       :	MEDIUM
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure Security Groups Unrestricted Specific Ports SSH (TCP,22) is not exposed to private hosts more than 32
+	File           :	iac/frontend_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/frontend_vpc
+	Line           :	12
+	Severity       :	LOW
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Ensure Security Groups Unrestricted Specific Ports SSH (TCP,22) is not exposed to private hosts more than 32
+	File           :	iac/security_vpc/test_bastion_ec2.tf
+	Module Name    :	root
+	Plan Root      :	iac/security_vpc
+	Line           :	12
+	Severity       :	LOW
+	
+	-----------------------------------------------------------------------
+	
+	Description    :	Enabling S3 versioning will enable easy recovery from both unintended user actions, like deletes and overwrites
+	File           :	iac/tgw/tgw_flowLogs.tf
+	Module Name    :	root
+	Plan Root      :	iac/tgw
+	Line           :	2
+	Severity       :	HIGH
+	
+	-----------------------------------------------------------------------
+	
+
+Scan Summary -
+
+	File/Folder         :	/cloud_gov
+	IaC Type            :	terraform
+	Scanned At          :	2024-04-03 02:27:23.861345344 +0000 UTC
+	Policies Validated  :	177
+	Violated Policies   :	26
+	Low                 :	4
+	Medium              :	11
+	High                :	11
+	
+
