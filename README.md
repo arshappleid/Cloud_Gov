@@ -18,6 +18,7 @@ The solution has been optimized for Operational Excellence , Security , Reliabil
 ├── iac 									# Terraform Config modules
 │	├── aws									# AWS Config Modules
 │	├── azure								# Azure Config Modules
+├── packer_config							# Packer Provisoner code , to create Images.
 ├── integration_tests						# Integration Testing with GO
 ├── database.sql 							# Potential Schema Design
 └── README.md
