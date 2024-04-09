@@ -68,9 +68,11 @@ IAC was coded with reusability in mind , and also the networking components were
 
 [Terraform Testing](https://www.hashicorp.com/blog/testing-hashicorp-terraform) strategy was used to test individual components of the infrastructure.
 
-## Provisioning of PKI Keys
+## Multi Cloud Strategy
 
-PKI keys are provisioned using Terraform Vault , as this gave the oppurtunity to provision the keys in the multi cloud infrastructure.
+- PKI keys are provisioned using Terraform Vault , as this gave the oppurtunity to provision the keys in the multi cloud infrastructure.
+- Container Images Will be built using [Terraform](https://developer.hashicorp.com/terraform/tutorials/provision/packer) , which can be consumed as part of a CICD pipelines.
+    - Since this gives the developer , to do development in Docker Env. which can later be converted to Amazon AMI , and Azure VM Images.
 
 ## Maintenance after Deployment
 
