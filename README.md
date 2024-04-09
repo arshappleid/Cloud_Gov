@@ -72,7 +72,7 @@ IAC was coded with reusability in mind , and also the networking components were
 
 - PKI keys are provisioned using Terraform Vault , as this gave the oppurtunity to provision the keys in the multi cloud infrastructure.
 - Container Images Will be built using [Terraform](https://developer.hashicorp.com/terraform/tutorials/provision/packer) , which can be consumed as part of a CICD pipelines.
-    - Since this gives the developer , to do development in Docker Env. which can later be converted to Amazon AMI , and Azure VM Images.
+  - Since this gives the developer , to do development in Docker Env. which can later be converted to Amazon AMI , and Azure VM Images.
 
 ## Maintenance after Deployment
 
@@ -99,7 +99,7 @@ Side Note : We will be using Github Repository , with a Code Star Connection ins
 
 ### Developer CICD Pipeline
 
-<img src="/Users/pdeol/code/github_projects/cloud_gov/images/developer_cicd.png" style="zoom: 33%;" />
+<img src="./images/developer_cicd.png" style="zoom: 33%;" />
 
 ## IAM Infrastructure
 
