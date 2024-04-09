@@ -89,11 +89,15 @@ PKI keys are provisioned using Terraform Vault , as this gave the oppurtunity to
 
 <img src="./images/architecture.png" alt="Design System Architecture" style="zoom: 50%;" />
 
-## Sample CICD Pipeline
+## IAC CICD Pipeline
 
-<img src="./images/cicd_pipeline.png" alt="CICD Pipeline" style="zoom: 65%;" />
+<img src="./images/cicd_pipeline.png" alt="CICD Pipeline" style="zoom: 50%;" />
 
 Side Note : We will be using Github Repository , with a Code Star Connection instead of Code Commit. Although Rest of the Pipeline stays the same. Also Github Actions will provide additional functionality to perform code checks, and Linting, while the code is being developed. Although only code pipeline will have the ability / AWS Secrets to deploy the architecture.
+
+### Developer CICD Pipeline
+
+<img src="/Users/pdeol/code/github_projects/cloud_gov/images/developer_cicd.png" style="zoom: 33%;" />
 
 ## IAM Infrastructure
 
