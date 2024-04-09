@@ -1,32 +1,45 @@
-# Start from a basic Alpine Linux image
-FROM alpine:3.19.1
+# Start from a basic Ubuntu image
+FROM ubuntu:20.04
+
+# Avoid prompts from apt
+ARG DEBIAN_FRONTEND=noninteractive
+
+# Install curl, unzip, and other necessary packages, which are needed to download and extract Terraform
+RUN apt-get update && apt-get install -y \
+    curl \
+    unzip \
+    git \
+    wget \
+    bash \
+    software-properties-common \
+    lsb-release \
+    bash-completion \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set environment variables for versions
+ARG TERRAFORM_VERSION=1.7.4
+ARG TERRAGRUNT_VERSION=0.28.1
+
+# Install Terraform
+RUN curl -Lo terraform.zip "https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip" && \
+    unzip terraform.zip -d /usr/local/bin && \
+    rm terraform.zip && \
+    curl -Lo terragrunt "https://github.com/gruntwork-io/terragrunt/releases/download/v${TERRAGRUNT_VERSION}/terragrunt_linux_amd64" && \
+    chmod +x terragrunt && \
+    mv terragrunt /usr/local/bin && \
+    curl -L "$(curl -s https://api.github.com/repos/tenable/terrascan/releases/latest | grep -o -E "https://.+?_Linux_x86_64.tar.gz")" > terrascan.tar.gz && \
+    tar -xf terrascan.tar.gz terrascan && rm terrascan.tar.gz && \
+    install terrascan /usr/local/bin && rm terrascan && \
+    wget https://releases.hashicorp.com/packer/1.7.2/packer_1.7.2_linux_amd64.zip && \
+    unzip packer_1.7.2_linux_amd64.zip && mv packer /usr/local/bin/ && \
+    packer -autocomplete-install && packer --verion
+
+
 WORKDIR /cloud_gov
 COPY iac/ ./iac/
 COPY cicd_for_iac/ ./cicd_for_iac/
 COPY iam_roles/ ./iam_roles/
 COPY scripts/ ./scripts/
-
-
-# Install curl and unzip, which are needed to download and extract Terraform
-RUN apk add --no-cache curl unzip
-
-# Set environment variables for versions
-ARG TERRAFORM_VERSION=1.7.4
-ARG TERRAGRUNT_VERSION=0.28.1
-ARG GO_VERSION=1.21.8-r0
-
-# Install Terraform
-RUN curl -Lo terraform.zip "https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip" && \
-    unzip terraform.zip -d /bin && \
-    rm terraform.zip && \
-    curl -Lo terragrunt "https://github.com/gruntwork-io/terragrunt/releases/download/v${TERRAGRUNT_VERSION}/terragrunt_linux_amd64" && \
-    chmod +x terragrunt && \
-    mv terragrunt /bin && \
-    apk add --no-cache "go=$GO_VERSION" && \
-    apk add --no-cache bash  && \
-    curl -L "$(curl -s https://api.github.com/repos/tenable/terrascan/releases/latest | grep -o -E "https://.+?_Linux_x86_64.tar.gz")" > terrascan.tar.gz && \
-    tar -xf terrascan.tar.gz terrascan && rm terrascan.tar.gz && \
-    install terrascan /usr/local/bin && rm terrascan && \
-    terrascan
-    # Set a default command
+COPY packer_config/ ./packer_config/
 CMD ["tail", "-f", "/dev/null"]
