@@ -14,5 +14,6 @@ services:
             - ./cicd_for_iac/:/cloud_gov/cicd_for_iac/
             - ./iam_roles/:/cloud_gov/iam_roles/
             - ./scripts/:/cloud_gov/scripts/
-            - ./packer_config/:/pakcer_config/
-            - ./terrascan_logs/:/terrascan_logs/
+            - ./packer_config/:/cloud_gov/packer_config/
+            - ./terrascan_logs/:/cloud_gov/terrascan_logs/
+        working_dir: /cloud_gov/

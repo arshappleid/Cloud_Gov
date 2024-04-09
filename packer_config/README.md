@@ -56,3 +56,52 @@ sudo cp /usr/bin/packer /usr/local/bin/packer
 which packer
 /usr/local/bin/packer
 ```
+
+
+
+### Environment Variables
+
+Since Packer will deploy resources in AWS , and Azure to build the images , and store them in S3 or Blob stores. We need to configure approriate environment variables for it do so. 
+
+Points where this can be configured : AWS Project Build ENV variables. Since technically this machine, will be our cloud packer env.
+
+###### Azure Credentials
+
+```bash
+ARM_SUBSCRIPTION_ID
+ARM_TENANT_ID
+ARM_CLIENT_ID
+ARM_CLIENT_SECRET
+```
+
+###### AWS Credentials
+
+```bash
+AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY
+```
+
+
+
+#### How to Deploy Packer
+
+1. Create an AWS Instance , and install packer on it. (Use the above ubuntu installation steps)
+2. Configure AWS , Azure Environment variables, as listed above.
+3. Setup CICD pipeline, that everytime tests are passed in your latest codebase. Trigger Packer to create new images in AWS , Azure.
+4. Setup CICD , to consume the latest images that have been already created by Packer. These will be in the S3 , Blob storage directories.
+
+### Webapp Setup
+
+- Create a ```/assests/setup-web.sh``` file , in the main project repo. And configure it to start the application.
+
+  ```bash 
+  #!/usr/bin/env sh
+  
+  cp /tmp/assets/webapp /usr/local/bin/
+  chmod +x /usr/local/bin/*
+  cp /tmp/assets/webapp.service /lib/systemd/system/webapp.service
+  service webapp start			## Can be any sorts of commad , start node, .NET
+  systemctl enable webapp					
+  ```
+
+- 

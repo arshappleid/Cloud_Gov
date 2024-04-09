@@ -33,13 +33,6 @@ RUN curl -Lo terraform.zip "https://releases.hashicorp.com/terraform/${TERRAFORM
     install terrascan /usr/local/bin && rm terrascan && \
     wget https://releases.hashicorp.com/packer/1.7.2/packer_1.7.2_linux_amd64.zip && \
     unzip packer_1.7.2_linux_amd64.zip && mv packer /usr/local/bin/ && \
-    packer -autocomplete-install && packer --verion
+    packer -autocomplete-install
 
-
-WORKDIR /cloud_gov
-COPY iac/ ./iac/
-COPY cicd_for_iac/ ./cicd_for_iac/
-COPY iam_roles/ ./iam_roles/
-COPY scripts/ ./scripts/
-COPY packer_config/ ./packer_config/
 CMD ["tail", "-f", "/dev/null"]
