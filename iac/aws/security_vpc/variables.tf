@@ -1,13 +1,18 @@
-variable "test" {
-  type        = bool
-  default     = true
-  description = "Boolean , enable test environment ?"
+variable "env" {
+  default     = "dev"
+  description = "Environment Type : dev , test , stag"
 }
 
-variable "FrontEnd_VPC_CIDR_block" {
-  type    = string
-  default = "10.2.0.0/16"
+variable "tgw_id" {
+  description = "TGW ID to connect this VPC to"
 }
+variable "vpc_cidr_block" {
+  description = "CIDR block for the VPC"
+}
+variable "FrontEnd_VPC_CIDR_block" {
+  type = string
+}
+
 
 data "aws_ec2_transit_gateway" "main_tgw" {
   filter {
@@ -30,24 +35,6 @@ data "aws_ami" "latest_amazon_linux" {
   }
 }
 
-data "aws_subnets" "security_vpc_subnets" {
-  filter {
-    name   = "vpc-id"
-    values = [aws_vpc.security_vpc.id]
-  }
-}
 
-data "aws_ec2_transit_gateway_attachment" "frontend_vpc_tgw_attachment" {
-  filter {
-    name   = "tag:Name"
-    values = ["FrontEnd_VPC_TGW_Attachment"]
-  }
-}
 
-data "aws_instance" "frontEnd_VPC_Bastion_host" {
-  filter {
-    name   = "tag:Name"
-    values = ["Test Bastion Host - FrontEnd VPC"]
-  }
-}
 

@@ -1,7 +1,13 @@
-variable "test" {
-  default     = true
-  type        = bool
-  description = "Use this to initialize the test environment"
+variable "env" {
+  default     = "dev"
+  description = "Environment Type : dev , test , stag"
+}
+output "main_route_table_id" {
+  value = aws_vpc.frontend_vpc.main_route_table_id
+}
+
+variable "vpc_cidr_block" {
+  description = "CIDR block for the VPC"
 }
 variable "ALB_AZ1" {
   type        = string
@@ -34,16 +40,9 @@ data "aws_ami" "latest_amazon_linux" {
   }
 }
 
-data "aws_ec2_transit_gateway" "main_tgw" {
-  filter {
-    name   = "tag:Name"
-    values = ["Cloud_Gov_TG"]
-  }
+variable "tgw_id" {
+  description = "TGW ID to connect this VPC to"
 }
 
-data "aws_subnets" "frontEnd_vpc_subnets" {
-  filter {
-    name   = "vpc-id"
-    values = [aws_vpc.frontend_vpc.id]
-  }
-}
+
+

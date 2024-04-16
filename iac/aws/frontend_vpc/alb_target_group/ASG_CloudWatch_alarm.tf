@@ -4,13 +4,13 @@ resource "aws_cloudwatch_metric_alarm" "high_cpu" {
   comparison_operator = "GreaterThanThreshold"
   metric_name         = "CPUUtilization"
   namespace           = "AWS/EC2"
-  period              = "120"		// For 120 Seconds * 2
+  period              = "120" // For 120 Seconds * 2
   evaluation_periods  = "2"
   statistic           = "Average"
-  threshold           = 80			// If average CPU Utilization above 80 %
+  threshold           = 80 // If average CPU Utilization above 80 %
   alarm_description   = "This metric monitors ec2 cpu usage"
   dimensions = {
-    AutoScalingGroupName = aws_autoscaling_group.example.name
+    AutoScalingGroupName = aws_autoscaling_group.asg.name
   }
   actions_enabled = true
   alarm_actions   = [aws_autoscaling_policy.scale_up.arn]
@@ -21,7 +21,7 @@ resource "aws_autoscaling_policy" "scale_up" {
   scaling_adjustment     = 1
   adjustment_type        = "ChangeInCapacity"
   cooldown               = 300
-  autoscaling_group_name = aws_autoscaling_group.example.name
+  autoscaling_group_name = aws_autoscaling_group.asg.name
 }
 // Scale down alarm
 resource "aws_cloudwatch_metric_alarm" "low_cpu" {
@@ -35,7 +35,7 @@ resource "aws_cloudwatch_metric_alarm" "low_cpu" {
   threshold           = 20
   alarm_description   = "This metric monitors ec2 cpu usage for scaling down"
   dimensions = {
-    AutoScalingGroupName = aws_autoscaling_group.example.name
+    AutoScalingGroupName = aws_autoscaling_group.asg.name
   }
   actions_enabled = true
   alarm_actions   = [aws_autoscaling_policy.scale_down.arn]
@@ -45,5 +45,5 @@ resource "aws_autoscaling_policy" "scale_down" {
   scaling_adjustment     = -1
   adjustment_type        = "ChangeInCapacity"
   cooldown               = 300
-  autoscaling_group_name = aws_autoscaling_group.example.name
+  autoscaling_group_name = aws_autoscaling_group.asg.name
 }
