@@ -1,4 +1,5 @@
 #! /bin/bash
+cd aws
 cd frontend_vpc
 terraform fmt & terraform destroy -auto-approve
 cd ../security_vpc
