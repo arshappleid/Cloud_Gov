@@ -2,13 +2,12 @@ variable "env" {
   default     = "dev"
   description = "Environment Type : dev , test , stag"
 }
-output "main_route_table_id" {
-  value = aws_vpc.frontend_vpc.main_route_table_id
+
+variable "vpc_id" {
+  description = "VPC ID , to Deploy all the resources in"
 }
 
-variable "vpc_cidr_block" {
-  description = "CIDR block for the VPC"
-}
+
 variable "ALB_AZ1" {
   type        = string
   default     = "us-east-1a"
@@ -39,10 +38,5 @@ data "aws_ami" "latest_amazon_linux" {
     values = ["amazon"]
   }
 }
-
-variable "tgw_id" {
-  description = "TGW ID to connect this VPC to"
-}
-
 
 

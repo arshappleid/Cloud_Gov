@@ -2,23 +2,14 @@ variable "env" {
   default     = "dev"
   description = "Environment Type : dev , test , stag"
 }
-
-variable "tgw_id" {
-  description = "TGW ID to connect this VPC to"
+variable "vpc_id" {
+  description = "VPC ID , to Deploy all the resources in"
 }
-variable "vpc_cidr_block" {
-  description = "CIDR block for the VPC"
+variable "main_route_table_id" {
+  description = "main route table id , to add internet outbound route"
 }
-variable "FrontEnd_VPC_CIDR_block" {
-  type = string
-}
-
-
-data "aws_ec2_transit_gateway" "main_tgw" {
-  filter {
-    name   = "tag:Name"
-    values = ["Cloud_Gov_TG"]
-  }
+variable "public_subnet_ids" {
+  description = "Public Subnet Ids , to deploy the Security EC2 instances"
 }
 
 data "aws_ami" "latest_amazon_linux" {

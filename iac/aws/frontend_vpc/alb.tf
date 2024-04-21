@@ -4,7 +4,7 @@ resource "aws_lb" "frontend_alb" {
   internal           = true
   load_balancer_type = "application"
   security_groups    = [aws_security_group.alb_sg.id]
-  subnets            = [aws_subnet.az1_private_subnet.id, aws_subnet.az2_private_subnet.id]
+  subnets            = data.aws_subnet_ids.all_subnets.ids // assumes all subnets are private
 
   enable_deletion_protection = false
 }

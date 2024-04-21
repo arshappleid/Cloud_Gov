@@ -1,5 +1,5 @@
 resource "aws_security_group" "alb_sg" {
-  vpc_id = aws_vpc.frontend_vpc.id
+  vpc_id = var.vpc_id
 
   // Assuming ALB is public facing
   egress {

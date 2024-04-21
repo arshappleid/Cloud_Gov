@@ -1,3 +1,7 @@
+data "aws_subnet_ids" "all_subnets" {
+  vpc_id = var.vpc_id
+}
+
 module "target_group_east1a" {
   source = "./alb_target_group"
   // Input variables
@@ -9,8 +13,8 @@ module "target_group_east1a" {
   ASG_min_size          = 1
   ALB_Id                = aws_lb.frontend_alb.id
   ALB_Security_Group_id = aws_security_group.alb_sg.id
-  ALB_VPC_ID            = aws_vpc.frontend_vpc.id
-  ASG_SUBNET_ID         = aws_subnet.az1_private_subnet.id
+  ALB_VPC_ID            = var.vpc_id
+  ASG_SUBNET_ID         = data.aws_subnet_ids.all_subnets.ids[0]
 }
 
 module "target_group_east1b" {
@@ -19,7 +23,7 @@ module "target_group_east1b" {
   availability_zone     = var.ALB_AZ2
   ALB_Id                = aws_lb.frontend_alb.id
   ALB_Security_Group_id = aws_security_group.alb_sg.id
-  ALB_VPC_ID            = aws_vpc.frontend_vpc.id
-  ASG_SUBNET_ID         = aws_subnet.az2_private_subnet.id
+  ALB_VPC_ID            = var.vpc_id
+  ASG_SUBNET_ID         = data.aws_subnet_ids.all_subnets.ids[1]
 }
 

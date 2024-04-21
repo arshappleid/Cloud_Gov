@@ -137,4 +137,5 @@ Side Note : We will be using Github Repository , with a Code Star Connection ins
 2. [Terraform VPC Module](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/5.7.1) By Anton Babenko
 3. [Terraform S3 Module](https://registry.terraform.io/modules/terraform-aws-modules/s3-bucket/aws/latest) By Anton Babenko
 4. [Terraform TGW Module](https://registry.terraform.io/modules/terraform-aws-modules/transit-gateway/aws/latest) By Anton Babenko
-5. [Terraform Stacks](https://github.com/hashicorp-guides/lambda-component-expansion-stack) 
+5. [Terraform ASG Module](https://registry.terraform.io/modules/terraform-aws-modules/autoscaling/aws/2.0.0)
+6. [Terraform Stacks](https://github.com/hashicorp-guides/lambda-component-expansion-stack) 
