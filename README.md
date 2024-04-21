@@ -133,4 +133,8 @@ Side Note : We will be using Github Repository , with a Code Star Connection ins
 
 ### Sources Reffered
 
-1. [AWS Documentation to create a CICD Pipeline for Terraform Code] (https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/create-a-ci-cd-pipeline-to-validate-terraform-configurations-by-using-aws-codepipeline.html)
+1. [AWS Documentation to create a CICD Pipeline for Terraform Code](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/create-a-ci-cd-pipeline-to-validate-terraform-configurations-by-using-aws-codepipeline.html)
+2. [Terraform VPC Module](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/5.7.1) By Anton Babenko
+3. [Terraform S3 Module](https://registry.terraform.io/modules/terraform-aws-modules/s3-bucket/aws/latest) By Anton Babenko
+4. [Terraform TGW Module](https://registry.terraform.io/modules/terraform-aws-modules/transit-gateway/aws/latest) By Anton Babenko
+5. [Terraform Stacks](https://github.com/hashicorp-guides/lambda-component-expansion-stack) 
