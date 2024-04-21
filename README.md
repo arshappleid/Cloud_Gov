@@ -65,12 +65,6 @@ The solution has been optimized for Operational Excellence , Security , Reliabil
 * Monitoring - Health , Availability , Performance , Security , Usage , Alerts.
 * Security - Gatekeepr VPC , Federated Identity (Microsoft AD) , Network Segmentation.
 
-## Infrastructure as Code Coding Strategy
-
-IAC was coded with reusability in mind , and also the networking components were seperated from actual Infrastructure. This was to make sure everytime we have to make changes to the actual infrastructure , we do not risk taking down the main networking components.
-
-[Terraform Testing](https://www.hashicorp.com/blog/testing-hashicorp-terraform) strategy was used to test individual components of the infrastructure.
-
 ## Multi Cloud Strategy
 
 - PKI keys are provisioned using Terraform Vault , as this gave the oppurtunity to provision the keys in the multi cloud infrastructure.
@@ -92,27 +86,31 @@ IAC was coded with reusability in mind , and also the networking components were
 
 ## Latest Architecture Design
 
-<img src="./images/architecture.png" alt="Design System Architecture" style="zoom: 50%;" />
+<img src="./docs/images/architecture.png" alt="Design System Architecture" style="zoom: 50%;" />
+
+### Multi Region Strategy using Terraform Stacks
+
+<img src="./docs/images/terraform_stacks_implementation.png" style="zoom:50%;" />
 
 ## IAC CICD Pipeline
 
-<img src="./images/cicd_pipeline.png" alt="CICD Pipeline" style="zoom: 50%;" />
+<img src="./docs/images/cicd_pipeline.png" alt="CICD Pipeline" style="zoom: 50%;" />
 
 Side Note : We will be using Github Repository , with a Code Star Connection instead of Code Commit. Although Rest of the Pipeline stays the same. Also Github Actions will provide additional functionality to perform code checks, and Linting, while the code is being developed. Although only code pipeline will have the ability / AWS Secrets to deploy the architecture.
 
 ### Developer CICD Pipeline
 
-<img src="./images/developer_cicd.png" style="zoom: 33%;" />
+<img src="./docs/images/developer_cicd.png" style="zoom: 33%;" />
 
 ## IAM Infrastructure
 
 ### Infrastructure Management Accounts
 
-![Security Account](./images/Security_account.png)
+![Security Account](./docs/images/Security_account.png)
 
 ### Team Management Accounts
 
-<img src="./images/IAM_Infrastructure.png" alt="IAM Infrastructure" style="zoom: 33%;" />
+<img src="./docs/images/IAM_Infrastructure.png" alt="IAM Infrastructure" style="zoom: 33%;" />
 
 ## Threat Detection, Monitoring and response , after Deployment
 
@@ -129,7 +127,7 @@ Side Note : We will be using Github Repository , with a Code Star Connection ins
 
 ## Proposed Database Schema Design
 
-<img src="./docs/ER_Diagram.png" alt="Database Schema" style="zoom: 33%;" />
+<img src="./docs/images/ER_Diagram.png" alt="Database Schema" style="zoom: 33%;" />
 
 ### Sources Reffered
 
