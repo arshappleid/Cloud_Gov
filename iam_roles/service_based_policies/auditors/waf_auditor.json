@@ -1,0 +1,25 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "Stmt1719990591128",
+			"Action": [
+				"s3:GetObject",
+				"s3:GetObjectTagging",
+				"s3:ListAllMyBuckets",
+				"s3:ListBucket"
+			],
+			"Effect": "Allow",
+			"Resource": "arn:aws:s3:::${waf-s3-bucket-name}/*"
+		},
+		{
+			"Sid": "Stmt1719990591129",
+			"Effect": "Deny",
+			"Action": ["s3:ListAllMyBuckets"],
+			"NotResource": [
+				"arn:aws:s3:::${waf-s3-bucket-name}",
+				"arn:aws:s3:::${waf-s3-bucket-name}/*"
+			]
+		}
+	]
+}
