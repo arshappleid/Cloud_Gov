@@ -20,12 +20,6 @@ Any cybersecurity attacks need to be reported to CEO, CTO, Cybersecurity Chief O
 
   
 
-  
-
-  
-
-  
-
 ## Incident Response Plan
 
 This document was developed in accordance with National Institute of Standards and Technology (NIST) Special Publication 800-61 rev. 2, the Incident Response Plan consists of a series of phases—distinct sets of activities that will assist in handling a security incident, from start to finish (State Of Michigan , 2024). 
