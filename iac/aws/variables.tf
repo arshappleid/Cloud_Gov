@@ -9,3 +9,10 @@ locals {
   main_cidr      = "10.0.0.0/8"
   s3_bucket_name = "vpc-flow-logs-to-s3-${random_pet.this.id}"
 }
+variable "tags" {
+  type = map(string)
+  default = {
+    env          = "dev"
+    project_name = "my-demo-project"
+  }
+}

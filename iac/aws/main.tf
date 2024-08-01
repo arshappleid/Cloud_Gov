@@ -3,6 +3,12 @@ locals {
     "Project-Name" = "My Test Project"
   }
 }
+
+module "dns_route53" {
+  source            = "./dns-resolver"
+  prod_route_record = "What to route DNS towards."
+  tags              = local.tags
+}
 module "waf" {
   source = "./waf"
 
@@ -16,7 +22,7 @@ module "cloudfront" {
   destination_id = "Resource-id-of-the-recieve-traffic-unit"
   tags           = local.tags
 }
-
+// VPC modules are seperate, to avoid making changes to them on individual terraform apply
 module "security_vpc_infra" {
   source = "./security_vpc"
 
@@ -24,6 +30,10 @@ module "security_vpc_infra" {
   vpc_id              = module.security_vpc.vpc_id
   main_route_table_id = module.security_vpc.vpc_main_route_table_id
   public_subnet_ids   = module.security_vpc.public_subnets
+  tags                = local.tags
+
+
+  frontend_alb_id = module.frontend_vpc_infra.ALB_Id
 }
 
 

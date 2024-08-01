@@ -21,7 +21,7 @@ module "security_vpc" {
   flow_log_destination_type                       = "s3"
   flow_log_destination_arn                        = module.vpc_flow_logs_bucket.s3_bucket_arn
   flow_log_cloudwatch_log_group_name_prefix       = "/aws/security-vpc-logz/"
-  flow_log_cloudwatch_log_group_name_suffix       = var.env
+  flow_log_cloudwatch_log_group_name_suffix       = var.tags.env
   flow_log_cloudwatch_log_group_retention_in_days = 31
   flow_log_file_format                            = "plain-text"
 }

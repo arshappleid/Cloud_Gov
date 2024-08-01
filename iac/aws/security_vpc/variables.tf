@@ -11,7 +11,9 @@ variable "main_route_table_id" {
 variable "public_subnet_ids" {
   description = "Public Subnet Ids , to deploy the Security EC2 instances"
 }
-
+variable "frontend_alb_id"{
+  description = "Id of the front end VPC , that is expected to recieve traffic from security VPC"
+}
 data "aws_ami" "latest_amazon_linux" {
   most_recent = true
 
@@ -26,6 +28,8 @@ data "aws_ami" "latest_amazon_linux" {
   }
 }
 
-
+variable "tags" {
+  type = map(string)
+}
 
 
