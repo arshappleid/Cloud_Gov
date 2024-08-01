@@ -1,4 +1,21 @@
+locals {
+  tags = {
+    "Project-Name" = "My Test Project"
+  }
+}
+module "waf" {
+  source = "./waf"
 
+  enable_logging = false
+  tags           = local.tags
+}
+
+module "cloudfront" {
+  source = "./cloudfront"
+
+  destination_id = "Resource-id-of-the-recieve-traffic-unit"
+  tags           = local.tags
+}
 
 module "security_vpc_infra" {
   source = "./security_vpc"
@@ -13,8 +30,8 @@ module "security_vpc_infra" {
 module "frontend_vpc_infra" {
   source = "./frontend_vpc"
 
-  env    = var.env
-  vpc_id = module.frontend_vpc.vpc_id
+  env     = var.env
+  vpc_id  = module.frontend_vpc.vpc_id
   ALB_AZ1 = module.frontend_vpc.azs[0]
   ALB_AZ2 = module.frontend_vpc.azs[1]
 }
