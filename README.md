@@ -137,3 +137,4 @@ Side Note : We will be using Github Repository , with a Code Star Connection ins
 4. [Terraform TGW Module](https://registry.terraform.io/modules/terraform-aws-modules/transit-gateway/aws/latest) By Anton Babenko
 5. [Terraform ASG Module](https://registry.terraform.io/modules/terraform-aws-modules/autoscaling/aws/2.0.0)
 6. [Terraform Stacks](https://github.com/hashicorp-guides/lambda-component-expansion-stack) 
+7. [Demo Hello World Docker Image](https://hub.docker.com/_/hello-world)

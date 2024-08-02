@@ -1,32 +1,33 @@
-locals {
-  s3_origin_id = var.destination_id // Route to this destination resource
-}
-
 resource "aws_cloudfront_distribution" "s3_distribution" {
 
   origin {
-    domain_name              = aws_s3_bucket.b.bucket_regional_domain_name
-    origin_access_control_id = aws_cloudfront_origin_access_control.default.id
-    origin_id                = local.s3_origin_id
+    domain_name = var.output_endpoint
+    origin_id   = var.output_endpoint_resource_id
+
+    custom_origin_config {
+      http_port              = 80
+      https_port             = 443
+      origin_ssl_protocols   = "TLSv1.2"
+      origin_protocol_policy = "https-only"
+    }
   }
 
-  enabled             = true
-  is_ipv6_enabled     = true
-  comment             = "Some comment"
-  default_root_object = "index.html"
+  enabled             = true // Should it accept user requests
+  is_ipv6_enabled     = false
+  comment             = "${var.tags.project_name}-${var.tags.env}-Cloudfront-Distribution"
+  default_root_object = "index.html" // File Returned at root url
 
   logging_config {
     include_cookies = false
-    bucket          = "mylogs.s3.amazonaws.com"
-    prefix          = "cloudfront-logs"
+    bucket          = var.logging_bucket_regional_name
+    prefix          = "${var.tags.project_name}-${var.tags.env}-Cloudfront-Logs"
   }
 
-  aliases = ["mysite.example.com", "yoursite.example.com"]
 
   default_cache_behavior {
     allowed_methods  = ["DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]
     cached_methods   = ["GET", "HEAD"]
-    target_origin_id = local.s3_origin_id
+    target_origin_id = var.output_endpoint
 
     forwarded_values {
       query_string = false
@@ -47,7 +48,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     path_pattern     = "/content/immutable/*"
     allowed_methods  = ["GET", "HEAD", "OPTIONS"]
     cached_methods   = ["GET", "HEAD", "OPTIONS"]
-    target_origin_id = local.s3_origin_id
+    target_origin_id = var.output_endpoint
 
     forwarded_values {
       query_string = false
@@ -70,7 +71,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     path_pattern     = "/content/*"
     allowed_methods  = ["GET", "HEAD", "OPTIONS"]
     cached_methods   = ["GET", "HEAD"]
-    target_origin_id = local.s3_origin_id
+    target_origin_id = var.output_endpoint
 
     forwarded_values {
       query_string = false
@@ -92,7 +93,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   restrictions {
     geo_restriction {
       restriction_type = "whitelist"
-      locations        = ["US", "CA", "GB", "DE"]
+      locations        = ["US"]
     }
   }
 

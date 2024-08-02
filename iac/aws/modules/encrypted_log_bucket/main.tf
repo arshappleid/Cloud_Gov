@@ -1,7 +1,8 @@
-module "s3_bucket_cloudfront_logs" {
+
+module "s3_bucket" {
   source = "terraform-aws-modules/s3-bucket/aws"
 
-  bucket = "${var.tags.project_name}-${var.tags.env}-Cloudfront-Distribution-Logs"
+  bucket = "logs-${var.tags.project_name}-${var.tags.env}-${var.bucket_name}"
   acl    = "private"
 
   control_object_ownership = true
@@ -13,9 +14,7 @@ module "s3_bucket_cloudfront_logs" {
   }
   force_destroy = contains(["dev"], var.tags.env) // If dev , allow delete
 
-  tags = merge(var.tags, {
-    purpose = "Store Cloudfront logs"
-  })
+  tags = merge(var.tags)
 
 
   // Delete the logs after 90 days
@@ -64,27 +63,11 @@ module "s3_bucket_cloudfront_logs" {
     rule = {
       default_retention = {
         mode = "COMPLIANCE"
-        days = 1
+        days = var.delete_logs_after_n_days - 1
       }
     }
   }
 
 }
 
-data "aws_iam_policy_document" "bucket_policy" {
-  statement {
-    principals {
-      type        = "AWS"
-      identifiers = [aws_iam_role.kms_key_role.arn]
-    }
-
-    actions = [
-      "s3:ListBucket",
-    ]
-
-    resources = [
-      "${module.s3_bucket_cloudfront_logs.s3_bucket_arn}",
-    ]
-  }
-}
 

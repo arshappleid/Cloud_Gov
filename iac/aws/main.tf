@@ -1,12 +1,22 @@
 locals {
   tags = {
-    "Project-Name" = "My Test Project"
+    "env"          = "dev"
+    "project_name" = "My Test Project"
   }
+}
+module "kms_keys" {
+  source = "./kms_keys"
+}
+module "iam_roles" {
+  source = "./iam"
+
+  log_bucket_kms_key_arn = module.kms_keys.log_bucket_kms_key_arn
+
 }
 
 module "dns_route53" {
   source            = "./dns-resolver"
-  prod_route_record = "What to route DNS towards."
+  prod_route_record = module.cloudfront.recieving_endpoint
   tags              = local.tags
 }
 module "waf" {
@@ -19,8 +29,9 @@ module "waf" {
 module "cloudfront" {
   source = "./cloudfront"
 
-  destination_id = "Resource-id-of-the-recieve-traffic-unit"
-  tags           = local.tags
+  destination_id               = "Resource-id-of-the-recieve-traffic-unit"
+  logging_bucket_regional_name = module.cloudfront_logs.bucket_bucket_domain_name
+  tags                         = local.tags
 }
 // VPC modules are seperate, to avoid making changes to them on individual terraform apply
 module "security_vpc_infra" {
@@ -32,8 +43,8 @@ module "security_vpc_infra" {
   public_subnet_ids   = module.security_vpc.public_subnets
   tags                = local.tags
 
-
-  frontend_alb_id = module.frontend_vpc_infra.ALB_Id
+  // This VPC is expected to route traffic to multiple applications
+  app_1_frontend_alb_id = module.frontend_vpc_infra.ALB_Id
 }
 
 

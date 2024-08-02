@@ -26,6 +26,6 @@ resource "aws_lb_target_group" "front_end_vpc_target" {
 
 resource "aws_alb_target_group_attachment" "example" {
   target_group_arn = aws_alb_target_group.front_end_vpc_target.arn
-  target_id        = var.frontend_alb_id
+  target_id        = var.app_1_frontend_alb_id
   port             = 80
 }

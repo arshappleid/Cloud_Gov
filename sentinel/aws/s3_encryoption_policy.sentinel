@@ -1,0 +1,30 @@
+import "tfplan"
+
+// Function to check if the bucket is encrypted
+isEncrypted = func(bucket) {
+  // Check if the server-side encryption configuration is set
+  if bucket.applied.server_side_encryption_configuration is null {
+    return false
+  }
+  
+  // Check if the rule includes an encryption rule with SSE algorithm
+  rule = bucket.applied.server_side_encryption_configuration.rule
+  if rule == null {
+    return false
+  }
+  if rule.apply_server_side_encryption_by_default == null {
+    return false
+  }
+  return true
+}
+
+// Iterate over each s3 bucket
+main = rule {
+  all tfplan.resources.aws_s3_bucket as _, buckets {
+    all buckets as _, bucket {
+      if isEncrypted(bucket) == false {
+		print("Bucket not encrypted:", bucket.address, "ARN:", bucket.values.arn)
+	  }
+    }
+  }
+}
