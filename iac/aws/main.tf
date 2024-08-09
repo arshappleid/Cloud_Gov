@@ -36,5 +36,20 @@ module "frontend_vpc_infra" {
   ALB_AZ2 = module.frontend_vpc.azs[1]
 }
 
+module "guardduty" {
+  source = "./guardduty"
+
+  enable_s3_logs                = true
+  ebs_volume_malware_protection = true
+}
+module "security_hub" {
+  source = "./securityhub"
+}
+
+module "sns_alerts" {
+  source                   = "./sns_alerts"
+  guardduty_alert_emails   = ["notify_this_email@gmail.com"]
+  securityhub_alert_emails = ["notify_this_email@gmail.com"] // SOAR
+}
 
 
