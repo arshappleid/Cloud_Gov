@@ -6,6 +6,8 @@ The solution has been optimized for Operational Excellence , Security , Reliabil
 
 **Side Note:** This project is not intended as a shippable product, but rather as a proof of concept. It does not meet many quality standards. For example, many security groups are misconfigured, and IAM role policies are incorrectly configured. Although inter-VPC connectivity has been tested, health checks have not yet been implemented, and it has not been tested for throughput. The code is written in a way that allows others to use it as a template to build more solutions. Many components of the project have been left in a future-configurable state. This project aims to showcase my skills in networking, Requirments Engineering,  AWS architecture building, Multi Cloud Architecture Skills, as well as my understanding of the AWS product suite and how I would use Terraform to build a cloud architecture solution. None of the Terraform code has been tested yet, but I would suggest looking at the project board to see what I intend to complete going forward. I have incorporated SNYK and Checkmarx as part of my development CI/CD to help enforce code quality and security standards. The CI/CD pipeline has also not been tested, but I have tried to ensure that the code for the pipeline is correct. I intend to finish this project as my time allows me, and believe it will still take an another year to meet the right standards.
 
+**Upcoming Changes** : https://github.com/users/arshappleid/projects/4
+
 ## Repo Design
 
 ```
