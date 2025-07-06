@@ -125,6 +125,32 @@ Side Note : We will be using Github Repository , with a Code Star Connection ins
 4. Follow , and make changes if Trusted Advisor advices of any more best practices.
 5. Provision SSM Parameters through [Terraform Vault](https://registry.terraform.io/providers/hashicorp/vault/latest/docs).
 
+## How the solution protects against 5 of the most common attacks
+
+Please refer to the [OWASP Threat matrix](https://owasp.org/www-project-threat-and-safeguard-matrix/) and the [OWASP Top 10](https://owasp.org/www-project-threat-and-safeguard-matrix/) to retrieve more details.
+
+| Threat Type           | Protect             | Detect           | Respond            | Recover          |
+|-----------------------|---------------------|------------------|--------------------|------------------|
+| Spoofing              | Authentication Stores, MFA , and Application Logging |                  |                    |                  |
+| Tampering             | Crypto Hash, Digital watermark/isolation with code commit , Antivirus Implementation |                  |                    |                  |
+| Repudiation           | Application Logging, AWS CloudTrail |                  |                    |                  |
+| Information Disclosure| Encryption, Authentication, and Authorization |                  |                    |                  |
+| Denial of Service     | CDN Caching, Auto Scaling Group, AWS WAF |                  |                    |                  |
+| Elevation of Privilege| IAM Roles and Policies, Audit Active Directory Permissions. |                  |                    |                  |
+| Lateral Movement      | Segmentation, Least Privilege, Firewalls, NACL rules |                  |                    |                  |
+| Broken Access Control |                     |                  |                    |                  |
+| Cryptographic Failures| Automatic key rotations |                  |                    |                  |
+| Injection             | Input Sanitization, Application development with Prepared queries. |                  |                    |                  |
+| Insecure Design       |                     |                  |                    |                  |
+| Security Misconfiguration |                |                  |                    |                  |
+| Vulnerable and Outdated Components | Automatic Patch Management for OS with CICD pipeline to verify integrity |                  |                    |                  |
+| Identification and Authentication Failures   | Use Active Directory Logs to explore |                    |                  ||
+| Software and Data Integrity Failures         |                  |                    |                  ||
+| Security Logging and Monitoring Failures      |                  |                    |                  ||
+| Server-Side Request Forgery (SSRF)           | Least Privilege IAM roles, Network Segmentation, Aurora Database Logs |                    |                  ||
+| DNS Spoofing | AWS Route53 DNSSEC | | ||
+
+
 ## Proposed Database Schema Design
 
 <img src="./docs/images/ER_Diagram.png" alt="Database Schema" style="zoom: 33%;" />

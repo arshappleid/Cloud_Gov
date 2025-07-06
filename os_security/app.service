@@ -1,0 +1,22 @@
+[Unit]
+Description=Java Application Service
+After=network.target
+
+[Service]
+Type=simple
+User=deployuser
+WorkingDirectory=/app
+Restart=on-failure
+UMask=0027
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+
+## Configure setup of environment variables.
+ExecStartPre=/usr/bin/aws ssm get-parameter --name /myapp/env --with-decryption --output text --query Parameter.Value > /app/.env
+EnvironmentFile=/app/.env
+ExecStart=/usr/bin/java -jar /app/your-app.jar
+
+
+[Install]
+WantedBy=multi-user.target
