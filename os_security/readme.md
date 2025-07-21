@@ -1,6 +1,11 @@
 ## Operating System Choice 
 Use a minimal operating system to reduce the chance of zero day vulnerability and possible future failures. 
 
+## Firewall Config
+For this setup, lets assume the applications are public facing web apps, and only allow traffic on port 443.
+
+Also allow traffic only 
+
 ## Consuming Environment Variables
 
 Assuming env variables are stored in AWS ssm service, and the iam service role for the instance has the correct permissions. in the following format

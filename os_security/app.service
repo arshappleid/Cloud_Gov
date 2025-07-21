@@ -5,7 +5,10 @@ After=network.target
 [Service]
 Type=simple
 User=deployuser
+Group=deployuser
 WorkingDirectory=/app
+RootDirectory=/app
+PrivateTmp=true
 Restart=on-failure
 UMask=0027
 PrivateTmp=true
