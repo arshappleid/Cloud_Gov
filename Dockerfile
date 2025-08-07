@@ -35,4 +35,6 @@ RUN curl -Lo terraform.zip "https://releases.hashicorp.com/terraform/${TERRAFORM
     unzip packer_1.7.2_linux_amd64.zip && mv packer /usr/local/bin/ && \
     packer -autocomplete-install
 
+RUN adduser -m appuser 
+USER appuser
 CMD ["tail", "-f", "/dev/null"]
