@@ -12,20 +12,29 @@ The solution has been optimized for Operational Excellence , Security , Reliabil
 
 ```
 .
-├── docs 									# Project Documentation
-│ ├── closing_presentation.pptx 			# Close off Presentation
-│ ├── procurement_request 					# Initial project request
-│ ├── requirements.docx 					# Project Requirements
-│ └── ...
-├── cicd_for_iac 							# AWS Codepipeline Config.
-├── iam_role 								# Config for IAM roles 
-├── iac 									# Terraform Config modules
-│	├── aws									# AWS Config Modules
-│	├── azure								# Azure Config Modules
-├── packer_config							# Packer Provisoner code , to create Images.
-├── integration_tests						# Integration Testing with GO
-├── database.sql 							# Potential Schema Design
-└── README.md
+├── docs/                      # Project Documentation
+│   ├── closing_presentation.pptx   # Close-off Presentation
+│   ├── procurement_request         # Initial project request
+│   ├── requirements.docx           # Project Requirements
+│   └── ...                         # Additional documentation
+├── cicd_for_iac/               # AWS CodePipeline configuration
+├── app_authentication/         # SAML (Entra ID) app authentication config
+├── os_security/                # Linux IAM, Firewall, NGINX best practices
+│   ├── linux/                       # Linux configuration
+│   ├────|── iam/                         # IAM configuration
+│   ├────├── nginx/                       # Nginx configuration
+│   ├────├── firewall_config.sh           # Firewall (firewall-cmd) configuration
+│   ├────└── readme.md                    # Config setup for Linux OS
+│   └── iis/                         # Microsoft IIS configuration
+│   └── scan.sh                      # Server scan script (Nmap, Curl headers, stress testing)
+├── iam_role/                   # Config for infrastructure IAM roles 
+├── iac/                        # Terraform configuration modules
+│   ├── aws/                         # AWS config modules
+│   └── azure/                       # Azure config modules
+├── packer_config/              # Packer provisioning code for image creation
+├── integration_tests/          # Integration testing with Go
+├── database.sql                 # Potential schema design
+└── README.md                    # Project overview
 
 ```
 
