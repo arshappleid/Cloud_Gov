@@ -37,3 +37,16 @@ sudo systemctl enable myapp.service
 ## Security Strategy
 
 Shell access, and access to system directories has been limited to prevent any malicious code taking access of system level commands or modules. 
+
+### Test Setup
+
+```bash
+cd os_security/linux/
+docker compose up -d
+
+## Test without sending host headers and verifying ssl cert.
+curl --insecure --include https://localhost/ ## will return homepage
+curl --insecure --include https://localhost/notexists
+
+```
+

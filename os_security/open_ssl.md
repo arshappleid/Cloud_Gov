@@ -13,8 +13,8 @@ sudo dnf install openssl
 
 Generating Key
 ```bash
-cd /etc/nginx/
-openssl req -x509 -days 100 -nodes -newkey rsa:2048 -keyout /etc/nginx/ssl/self.key -out /etc/nginx/ssl/self.cert
+cd /etc/nginx/ ## or the directory where you want to store the certificate.
+openssl req -x509 -days 100 -nodes -newkey rsa:2048 -keyout ./self.key -out ./self.cert
 ```
 
 ## Changing Permission for security
