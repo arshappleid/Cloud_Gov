@@ -14,11 +14,11 @@ Applications make use of the LDAP protocol, to look up users and their informati
 
 2. Create user accounts and groups within Active Directory.
 
+See [Active Directory Setup](https://github.com/arshappleid/azure-ad-sql-server) for more information.
+
 #### 2. Configure your web application:
 
-1. In your web application, open the web.config file.
-
-Add the necessary settings for Active Directory authentication, such as the connection string and authentication mode.
+1. In your web application, open the web.config file. Add the necessary settings for Active Directory authentication, such as the connection string and authentication mode.
 
 2. Specify the Active Directory domain details, such as the domain name, LDAP path, and domain controller.
 
@@ -37,3 +37,5 @@ Add the necessary settings for Active Directory authentication, such as the conn
 2. Use Active Directory groups or other attributes to control access to different parts of your web application.
 
 3. Implement authorization logic to determine what actions or resources a user can access based on their Active Directory group membership or other criteria.
+
+_Step 3 and 4 will vary for React and .NET applications _
