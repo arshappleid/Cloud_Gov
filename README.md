@@ -161,6 +161,17 @@ Please refer to the [OWASP Threat matrix](https://owasp.org/www-project-threat-a
 | Server-Side Request Forgery (SSRF)           | Least Privilege IAM roles, Network Segmentation, Aurora Database Logs |                    |                  ||
 | DNS Spoofing | AWS Route53 DNSSEC | | ||
 
+## Monitoring Infrastructure Resources using SQL Technologies. 
+
+SQL was used since it was the most know Data Parsing Language known by users. 
+
+### Monitoring Azure Data Logs using SQL. 
+```
+SELECT ALL FROM TABLE 
+WHERE 
+  "Flow State" EQUALS "D"
+```
+
 
 ## Proposed Database Schema Design
 
