@@ -1,5 +1,5 @@
 ## Overview 
-Mutli Cloud Solution for meeting NSA and CISA cybersecurity best practices, and Department of Defense Impact Level 4 requrirements. Additionally, it proposes strategies to mitigate OWASP Top 10 attacks and, and implement Highly Availaible and Resilient Architecture to mitigate DDoS Attacks.
+AWS, Azure Multi Cloud Solution for meeting NSA and CISA cybersecurity best practices, and Department of Defense Impact Level 4 requrirements. Additionally, it proposes strategies to mitigate OWASP Top 10 attacks and, and implement Highly Availaible and Resilient Architecture to mitigate DDoS Attacks.
 
 ## Description
 A cloud solution for a subset of government organization, created using NSA and CISA  Top 10 Cybersecurity Mitigation Strategies. This cloud Solution can act as a template to manage their overall cloud infrastructure , and expand their network to allow for additional apps in the future. By providing seamless , and easy integration to their current secure infrastructure.
