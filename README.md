@@ -1,5 +1,7 @@
-## Description
+## Overview 
+Mutli Cloud Solution for meeting NSA and CISA cybersecurity best practices, and Department of Defense Impact Level 4 requrirements. Additionally, it proposes strategies to mitigate OWASP Top 10 attacks and, and implement Highly Availaible and Resilient Architecture to mitigate DDoS Attacks.
 
+## Description
 A cloud solution for a subset of government organization, created using NSA and CISA  Top 10 Cybersecurity Mitigation Strategies. This cloud Solution can act as a template to manage their overall cloud infrastructure , and expand their network to allow for additional apps in the future. By providing seamless , and easy integration to their current secure infrastructure.
 
 The solution has been optimized for Operational Excellence , Security , Reliability , Performance , Cost Optimization. It has also been made sure to meet the Impact level 4 requirements as per [Department of  Defense (DOD) IL-4 Guidelines](./docs/DOD_IL_Requirements.pdf) from DISA, [NSA Top 10 Security Strategy](./docs/NSA_Top10_Security_Strategy.pdf), and [OWASP Top 10 Security Risks](https://owasp.org/www-project-top-ten/).
